@@ -1,0 +1,27 @@
+@import '../../global.scss';
+
+.primaryBtn {
+    padding: 12px;
+    min-width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: var(--primaryBtn);
+    color: var(--white);
+    border-radius: 5px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    @include mobile {
+        font-size: 12px;
+        min-width: 80px;
+        padding: 10px 15px;
+    }
+
+    &:hover {
+        background-color: var(--accentColor);
+    }
+}

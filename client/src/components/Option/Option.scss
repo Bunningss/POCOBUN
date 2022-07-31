@@ -1,0 +1,24 @@
+@import '../../global.scss';
+
+.option {
+    background-color: var(--background);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+
+    @include mobile {
+        padding: 10px 15px;
+    }
+
+    .optIcon {
+        position: absolute;
+    }
+
+    .optText {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}

@@ -1,0 +1,41 @@
+@import '../../global.scss';
+
+.gallery {
+    overflow: hidden;
+
+    .galleryWrapper {
+        display: flex;
+        justify-content: flex-start;
+        // align-items: center;
+        gap: 5px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0 5px;
+
+        @include mobile {
+            width: 100vw;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+
+            @include mobile {
+                height: 7px;
+            }
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--accentColor);
+            width: 20px;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, .09);
+            cursor: pointer;
+        }
+    }
+}

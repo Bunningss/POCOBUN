@@ -1,0 +1,38 @@
+@import '../../global.scss';
+
+.store {
+    padding: 10px;
+
+    .categories {
+
+        .categoryContainer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            @include mobile {
+                justify-content: flex-start;
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+        }
+    }
+
+    .header {
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 10px 0;
+
+        span {
+            color: rgba(0,0,0,.5);
+        }
+    }
+
+    .storeWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

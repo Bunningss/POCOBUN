@@ -1,0 +1,68 @@
+@import '../../global.scss';
+
+.nav {
+    background-color: rgba(0,0,0,0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    user-select: none;
+
+    .navContainer {
+        max-width: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logoContainer {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include mobile {
+                width: 33%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .logo {
+                width: 100%;
+
+                @include mobile {
+                    width: 60%;
+                }
+            }
+        }
+
+        .navList {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            color: var(--white);
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .bagWrapper {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+
+            @include mobile {
+                width: 33%;
+                justify-content: flex-end;
+            }
+            
+            .bag {
+                width: 25px;
+            }
+        }
+    }
+}

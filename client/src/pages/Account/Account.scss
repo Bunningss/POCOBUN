@@ -1,0 +1,19 @@
+.account {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+
+    .accountWrapper {
+        max-width: 1024px;
+        width: 100%;
+
+        .header {
+            font-size: 40px;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+    }
+
+}

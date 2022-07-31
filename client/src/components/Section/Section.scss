@@ -1,0 +1,54 @@
+@import '../../global.scss';
+
+.section {
+    margin: 20px 0;
+    width: 100%;
+    padding: 0 10px;
+
+    .sectionHeader {
+        text-align: center;
+        margin: 0px 0 20px 0;
+        font-size: 28px;
+        font-weight: 500;
+        text-decoration: underline crimson;
+    }
+
+    .cardContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include laptopLarge {
+            justify-content: flex-start;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        .card {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -600px;
+            left: 0;
+            width: 10%;
+            height: 200%;
+            transform: rotate(45deg);
+            background-color: #33415c;
+            opacity: 0.1;
+            transition: all 3s ease-in-out;
+        }
+
+        .card:hover::before {
+            transform: translate(300%, 600%);
+        }
+
+        @include laptop {
+            justify-content: flex-start;
+            gap: 15px;
+        }
+    }
+}

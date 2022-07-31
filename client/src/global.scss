@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+:root {
+    --background: #f5f5f7;
+    --font: #000;
+    --grey: #343a40;
+    --white: #fff;
+    --primaryBtn: #0077ed;
+    --accentColor: crimson;
+}
+
+body {
+    background-color: var(--background);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--accentColor);
+}
+
+// Responsive
+$laptopLarge: 1440px;
+
+@mixin laptopLarge {
+    @media (max-width: #{$laptopLarge}) {
+        @content
+    }
+}
+
+
+$laptop: 1024px;
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content
+    }
+}
+
+$ipad: 820px;
+
+@mixin ipad {
+    @media (max-width: #{$ipad}) {
+        @content
+    }
+}
+
+$tab: 768px;
+
+@mixin tab {
+    @media (max-width: #{$tab}) {
+        @content
+    }
+}
+
+$mobile: 500px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content
+    }
+}
+
+// Universal
+
+.default {
+    animation: reveal .8s linear;
+}
+
+.redLight {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accentColor);
+    text-align: center;
+    margin: 10px 0;
+    transition: all 1s ease;
+}
+
+.greenLight {
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+    margin: 10px 0;
+    transition: all 1s ease;
+}
+
+// Animations
+    @keyframes reveal {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes goUp {
+        0% {
+            transform: translate(0, 20px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+@-webkit-keyframes scale-in {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
