@@ -100,6 +100,20 @@ $mobile: 500px;
     transition: all 1s ease;
 }
 
+.header {
+    font-size: 40px;
+    margin: 40px 0;
+    font-weight: 500;
+
+    @include laptop {
+        font-size: 28px;
+    }
+
+    @include mobile {
+        font-size: 21px;
+    }
+}
+
 // Animations
     @keyframes reveal {
         0% {

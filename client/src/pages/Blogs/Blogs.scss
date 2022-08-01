@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.blogs {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .blogsTop {
+        max-width: 1024px;
+        width: 100%;
+    }
+    
+    .blogsBottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 36px;
+        grid-row-gap: 70px;
+
+        @include ipad {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

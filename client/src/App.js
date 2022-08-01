@@ -2,7 +2,6 @@ import './global.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
-import Bar from './components/Bar/Bar';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Store from './pages/Store/Store';
@@ -16,6 +15,7 @@ import Cart from './pages/Cart/Cart';
 import Orders from './pages/Orders/Orders';
 import Account from './pages/Account/Account';
 import Error404 from './pages/Error404/Error404';
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -23,7 +23,6 @@ function App() {
     <BrowserRouter>
       <Navbar active={active} setActive={setActive}/>
       <Sidebar active={active} setActive={setActive}/>
-      {/* <Bar/> */}
       <Routes>
         <Route path="*" element={<Error404/>}/>
         <Route exact path='/' element={<Home/>}/>
@@ -34,6 +33,7 @@ function App() {
         <Route exact path='/register' element={<Register/>}/>
         <Route exact path='/myorders' element={<Orders/>}/>
         <Route exact path='/myaccount' element={<Account/>}/>
+        <Route exact path='/blog' element={<Blogs/>}/>
       </Routes>
       <Newsletter/>
       <Contact/>
