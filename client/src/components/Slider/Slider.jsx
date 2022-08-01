@@ -23,7 +23,6 @@ const Slider = ({ items }) => {
           ))
         }
       </div>
-      {/* <img src={arrow} onClick={prevSlide} alt="Arrow" className="sliderIcon iconLeft" /> */}
       <img src={arrow} onClick={nextSlide} alt="Arrow" className="sliderIcon iconRight" />
     </div>
   )

@@ -20,7 +20,7 @@
     }
 
     @include mobile {
-        height: 300px;
+        height: 250px;
     }
 
     .wrapper {
@@ -45,6 +45,10 @@
         width: 60px;
         cursor: pointer;
         transition: all .3s ease;
+
+        // @include mobile {
+        //     display: none;
+        // }
 
         &.iconLeft {
             left: 15px;

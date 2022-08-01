@@ -74,33 +74,28 @@ export const newsletterInputs = [
 export const linkBar = [
     {
         id: 1,
-        name: "Store",
-        href: "store",
+        name: "Home",
+        href: "/",
     },
     {
         id: 2,
-        name: "Health & Beauty",
-        href: "store?category=h&b",
+        name: "Shop",
+        href: "store",
     },
     {
         id: 3,
-        name: "Fashion",
-        href: "store?category=fashion",
+        name: "Our Story",
+        href: "story",
     },
     {
         id: 4,
-        name: "Groceries",
-        href: "store?category=groceries",
+        name: "Blog",
+        href: "blog",
     },
     {
         id: 5,
-        name: "Electronics",
-        href: "store?category=electronics",
-    },
-    {
-        id: 6,
-        name: "Sports & Outdoors",
-        href: "store?category=s&o",
+        name: "Contact Us",
+        href: "contact",
     },
 ];
 

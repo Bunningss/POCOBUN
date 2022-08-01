@@ -8,7 +8,7 @@ const Category = (props) => {
     <Link to={item.href} onClick={handleClick} >
         <div className="category">
             <img src={item.img} alt="" />
-            <p>{item.name}</p>
+            <p className='itemName'>{item.name}</p>
         </div>
     </Link>
   )

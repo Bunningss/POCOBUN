@@ -2,17 +2,19 @@
 
 .card {
     height: 500px;
-    width: 413px;
+    width: 313px;
     min-width: 300px;
-    margin: 10px;
+    margin: 10px 5px;
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    transition: all .3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     &:hover {
-        transform: translate(5px, -5px);
+
+        .cardImg {
+            transform: scale(1.15);
+        }
     }
 
     a {
@@ -51,6 +53,7 @@
                 height: 70%;
                 width: 100%;
                 object-fit: contain;
+                transition: all .3s ease;
             }
         }
     }
