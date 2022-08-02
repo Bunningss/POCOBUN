@@ -5,7 +5,7 @@ import arrow from '../../img/arrow.png';
 
 const Orders = () => {
   return (
-    <div className='orders default'>
+    <div className='orders default defaultPadding'>
       <div className="ordersWrapper">
         <Link to='/myaccount' className="linkSection">
           <h6 className='accountLink'>Account Settings</h6>

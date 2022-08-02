@@ -47,9 +47,9 @@ const Login = () => {
     setPassword(e.target.value)
   }
   return (
-    <div className='login default'>
+    <div className='login default defaultPadding'>
       <div className="loginWrapper">
-        <h2 className="header">Welcome to POCOBUN</h2>
+        <h2 className="sectionHeader">Welcome to POCOBUN</h2>
         { !user ?
             <form action="" className="loginForm">
               {

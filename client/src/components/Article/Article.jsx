@@ -4,7 +4,7 @@ import demo from '../../img/Blogs/blog (2).jpg';
 
 const Article = () => {
   return (
-    <Link className='article' to='/article/sdh'>
+    <Link className='article' to='/blog/sdh'>
       <article className="articleWrapper">
           <div className="articleImgContainer">
             <img className='articleImg' src={demo} alt="" />

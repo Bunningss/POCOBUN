@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .card {
-    height: 500px;
+    height: 480px;
     width: 313px;
     min-width: 300px;
     margin: 10px 5px;
@@ -9,6 +9,10 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    @include mobile {
+        height: 460px;
+    }
 
     &:hover {
 

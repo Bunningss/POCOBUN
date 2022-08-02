@@ -67,7 +67,7 @@ const Register = () => {
   }
 
   return (
-    <div className='register default'>
+    <div className='register default defaultPadding'>
         <div className="wrapper">
             <h2 className="header">Sign up to POCOBUN</h2>
             <form action="" className="registerForm">

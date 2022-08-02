@@ -82,6 +82,11 @@ $mobile: 500px;
     animation: reveal .8s linear;
 }
 
+.defaultPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .redLight {
     font-size: 14px;
     font-weight: 600;
@@ -114,6 +119,17 @@ $mobile: 500px;
     }
 }
 
+.arrow {
+    width: 45px;
+    transform: rotate(180deg);
+    margin-top: 50px;
+    user-select: none;
+
+    @include mobile {
+        width: 35px;
+    }
+}
+
 // Animations
     @keyframes reveal {
         0% {
@@ -121,15 +137,6 @@ $mobile: 500px;
         }
         100% {
             opacity: 1;
-        }
-    }
-
-    @keyframes goUp {
-        0% {
-            transform: translate(0, 20px);
-        }
-        100% {
-            transform: translate(0, 0);
         }
     }
 

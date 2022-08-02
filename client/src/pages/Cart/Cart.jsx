@@ -4,7 +4,7 @@ import Checkout from '../../components/Checkout/Checkout';
 
 const Cart = () => {
   return (
-      <div className='cart default'>
+      <div className='cart default defaultPadding'>
           <h2 className="header">Review your bag.</h2>
           <h4 className="sectionHeader">Free delivery and free returns.</h4>
           <CartItem/>

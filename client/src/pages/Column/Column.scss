@@ -1,0 +1,33 @@
+@import '../../global.scss';
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .columnWrapper {
+        max-width: 1024px;
+        width: 100%;
+
+        .columnImg {
+            max-width: 450px;
+            max-height: 610px;
+            width: 100%;
+        }
+
+        .columnText {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 2;
+
+            @include mobile {
+                font-size: 16px;
+            }
+
+            &.date {
+                margin-bottom: 50px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

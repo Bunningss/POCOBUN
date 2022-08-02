@@ -4,9 +4,10 @@ import ListItem from '../ListItem/ListItem';
 
 const Sidebar = ({ active, setActive }) => {
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     setActive(!active)
   };
+  
   
   if ( active ) {
     document.body.style.overflow = "hidden";

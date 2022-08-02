@@ -2,7 +2,7 @@ import './global.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
-import Contact from './components/Contact/Contact';
+import Disclaimer from './components/Disclaimer/Disclaimer';
 import Footer from './components/Footer/Footer';
 import Store from './pages/Store/Store';
 import Newsletter from './components/Newsletter/Newsletter';
@@ -16,6 +16,8 @@ import Orders from './pages/Orders/Orders';
 import Account from './pages/Account/Account';
 import Error404 from './pages/Error404/Error404';
 import Blogs from './pages/Blogs/Blogs';
+import Column from './pages/Column/Column';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -34,9 +36,11 @@ function App() {
         <Route exact path='/myorders' element={<Orders/>}/>
         <Route exact path='/myaccount' element={<Account/>}/>
         <Route exact path='/blog' element={<Blogs/>}/>
+        <Route exact path='/blog/:id' element={<Column/>}/>
+        <Route exact path='/contact' element={<Contact/>}/>
       </Routes>
       <Newsletter/>
-      <Contact/>
+      <Disclaimer/>
       <Footer/>
     </BrowserRouter>
   );

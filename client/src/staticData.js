@@ -1,9 +1,9 @@
 //BANNERS
-import summerSale from './img/summer sale.png';
-import bigSale from './img/big sale.png';
-import beautyProduct from './img/beauty product.png';
-import sportswear from './img/SPORTSWEAR.png';
-import makeup from './img/makeup.png';
+import summerSale from './img/summer sale.webp';
+import bigSale from './img/big sale.webp';
+import beautyProduct from './img/beauty product.webp';
+import sportswear from './img/SPORTSWEAR.webp';
+import makeup from './img/makeup.webp';
 // cats
 import health from './img/health.png';
 import fashion from './img/fashion.png';
@@ -84,13 +84,13 @@ export const linkBar = [
     },
     {
         id: 3,
-        name: "Our Story",
-        href: "story",
+        name: "Blog",
+        href: "blog",
     },
     {
         id: 4,
-        name: "Blog",
-        href: "blog",
+        name: "Our Story",
+        href: "story",
     },
     {
         id: 5,
