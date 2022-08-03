@@ -39,15 +39,15 @@ const Contact = () => {
                 <h4 className="subheader">More Information</h4>
                 <div className="textGroup">
                   <img src={location} alt="Location Ping" className="icon" />
-                  <p className="contactText">3 London Road, Essex, IG91 2GZ</p>
+                  <p className="text">3 London Road, Essex, IG91 2GZ</p>
                 </div>
                 <div className="textGroup">
                   <img src={phone} alt="Telephone Icon" className="icon" />
-                  <p className="contactText">+000-00000000</p>
+                  <p className="text">+000-00000000</p>
                 </div>
                 <div className="textGroup">
                   <img src={mail} alt="Email Icon" className="icon" />
-                  <p className="contactText">pocobun@pocobun.co.uk</p>
+                  <p className="text">pocobun@pocobun.co.uk</p>
                 </div>
                 <div className="socials">
                   <a className='socialLink' href="www.google.com" target='_blank'>

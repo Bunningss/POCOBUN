@@ -5,8 +5,8 @@ const Order = () => {
   return (
     <div className='order'>
         <div className="orderInfo">
-            <h6>Order Date: 28 July 2022</h6>
-            <h6>Total Price: 200£</h6>
+            <h6 className='text'>Order Date: 28 July 2022</h6>
+            <h6 className='text'>Total Price: 200£</h6>
         </div>
         <OrderItem/>
         <OrderItem/>

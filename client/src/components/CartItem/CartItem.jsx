@@ -9,9 +9,9 @@ const CartItem = ({ item }) => {
             <img src={demo} alt='' />
         </div>
         <div className="textZone">
-            <h6>smart watch</h6>
-            <p>Quantity - 10</p>
-            <p>Price - 40£</p>
+            <h6 className='text'>smart watch</h6>
+            <p className='text'>Quantity - 10</p>
+            <p className='text'>Price - 40£</p>
             <WarningButton text={"Remove"}/>
         </div>
     </div>

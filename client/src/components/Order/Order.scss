@@ -16,13 +16,5 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
-
-        h6 {
-            font-size: 18px;
-
-            @include mobile {
-                font-size: 16px;
-            }
-        }
     }
 }

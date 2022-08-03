@@ -37,18 +37,18 @@ const Product = () => {
         <Buystrip/>
       </div>
       <div className="productRight">
-        <h2 className="headerText">{product.name}</h2>
-        <h3 className="headerText price">Price - {product.price}£</h3>
+        <h2 className="title">{product.name}</h2>
+        <h3 className="subheader">Price - {product.price}£</h3>
         <div className="features">
           <Feature/>
           <Feature/>
         </div>
         <Gallery setModalImg={setModalImg} images={product.image}/>
         <div className="quantity">
-          <p>Select Quantity: </p>
+          <p className='text'>Select Quantity: </p>
           <div className="quantityWrapper">
             <img onClick={() => handleQuantity("dec")} src={minus} alt="" />
-            <span>{quantity}</span>
+            <span className='text'>{quantity}</span>
             <img onClick={() => handleQuantity("inc")} src={plus} alt="" />
           </div>
         </div>

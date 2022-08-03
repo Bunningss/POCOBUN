@@ -10,8 +10,8 @@ const Article = () => {
             <img className='articleImg' src={demo} alt="" />
           </div>
           <div className="articleInfo">
-              <h6 className="articleHeader underline">Waarom je een natuurlijkedeodorant moet proberen</h6>
-              <h6 className="articleHeader">31/07/2022</h6>
+              <h6 className="subheader underline">Waarom je een natuurlijkedeodorant moet proberen</h6>
+              <h6 className="subheader">31/07/2022</h6>
           </div>
       </article>
     </Link>

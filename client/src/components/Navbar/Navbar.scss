@@ -15,7 +15,7 @@
         justify-content: space-between;
 
         .logoContainer {
-            width: 10%;
+            width: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,7 +27,7 @@
             }
 
             .logo {
-                width: 100%;
+                width: 50%;
 
                 @include mobile {
                     width: 60%;
@@ -39,7 +39,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 80%;
+            width: 60%;
             color: var(--white);
 
             @include mobile {
@@ -48,7 +48,7 @@
         }
 
         .bagWrapper {
-            width: 10%;
+            width: 20%;
             display: flex;
             justify-content: center;
             align-items: center;

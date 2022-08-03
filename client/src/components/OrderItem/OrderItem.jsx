@@ -8,12 +8,12 @@ const OrderItem = () => {
             <img src={demo} alt="" />
         </div>
         <div className="orderItemInfo">
-            <h6>Smart Watch</h6>
-            <h6>Quantity: 10</h6>
+            <h6 className='text'>Smart Watch</h6>
+            <h6 className='text'>Quantity: 10</h6>
         </div>
         <div className="orderDeliveryInfo">
-            <h6>Delivery Date: 31 July 2022</h6>
-            <h6>Contact Email: john@gmail.com</h6>
+            <h6 className='text'>Delivery Date: 31 July 2022</h6>
+            <h6 className='text'>Contact Email: john@gmail.com</h6>
         </div>
     </div>
   )

@@ -11,18 +11,18 @@ const LargeCard = ({ pack }) => {
     <Link className='largeCardLink' to="/product/hjdfdhuf" onMouseEnter={() => setVis(true)} onMouseLeave={() => setVis(false)}>
         <div className='largeCard'>
             <div className="largeCardContainer">
-                <h4 className="productTitle">{name}</h4>
-                <h4 className="productPrice">Only at {price}£</h4>
+                <h4 className="title">{name}</h4>
+                <h4 className="subheader">Only at {price}£</h4>
                 <div className="productContent">
                     <img src={image} alt="" className="productImg" />
                     <div className="productDetails">
-                        <h4>Contains 10 packs of candy</h4>
-                        <h4>Contains 10 packs of coffee</h4>
-                        <h4>Contains 10 packs of milk</h4>
-                        <h4>Contains 10 packs of sugar</h4>
-                        <h4>Contains 10 packs of oat milk</h4>
-                        <h4>Contains 10 cans of energy drink</h4>
-                        <h4>Contains 10 packs of chips</h4>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
+                        <p className='text'>Contains 10 packs of candy</p>
                     </div>
                 </div>
             </div>

@@ -33,8 +33,6 @@
 
                 p {
                     padding: 15px 0;
-                    font-size: 18px;
-                    font-weight: 500;
                     text-transform: capitalize;
 
                     @include mobile {
@@ -43,13 +41,8 @@
                 }
 
                 h4 {
-                    font-size: 24px;
                     font-weight: 600;
                     text-transform: capitalize;
-
-                    @include mobile {
-                        font-size: 20px;
-                    }
                 }
             }
 

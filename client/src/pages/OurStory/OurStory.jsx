@@ -8,7 +8,7 @@ const OurStory = () => {
         <div className="storyWrapper defaultPadding">
             <div className="storyBg"></div>
             <div className="storyLeft">
-                <h2 className="storyHeader">About Us</h2>
+                <h2 className="header">About Us</h2>
                 <p className="storyText">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit soluta quis voluptatem? Porro, autem adipisci? Laboriosam pariatur autem quas?
                 </p>
@@ -25,7 +25,7 @@ const OurStory = () => {
                 </div>
             </div>
             <div className="storyRight">
-                <h2 className="storyHeader">What we do?</h2>
+                <h2 className="header">What we do?</h2>
                 <p className="storyText">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti facere consequatur earum veritatis neque delectus est eveniet eligendi officia!
                 </p>

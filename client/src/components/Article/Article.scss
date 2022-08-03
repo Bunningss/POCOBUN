@@ -54,15 +54,9 @@
         .articleInfo {
             height: 20%;
 
-            .articleHeader {
+            .subheader {
                 width: fit-content;
-                font-size: 21px;
                 position: relative;
-                font-weight: 400;
-
-                @include laptop {
-                    font-size: 18px;
-                }
             }
         }
     }

@@ -12,6 +12,7 @@
 
         .header {
             text-align: center;
+            margin: 25px 0;
         }
 
         .contactContainer {
@@ -32,6 +33,14 @@
                 .subheader {
                     font-size: 24px;
                     font-weight: 500;
+
+                    @include laptop {
+                        font-size: 22px;
+                    }
+
+                    @include mobile {
+                        font-size: 18px;
+                    }
                 }
 
                 .textGroup {
@@ -43,11 +52,6 @@
                     .icon {
                         width: 25px;
                         object-fit: contain;
-                    }
-
-                    .contactText {
-                        font-size: 18px;
-                        font-weight: 400;
                     }
                 }
 
@@ -68,6 +72,10 @@
                         .icon {
                             width: 50px;
                             object-fit: contain;
+
+                            @include laptop {
+                                width: 35px;
+                            }
                         }
                     }
                 }
