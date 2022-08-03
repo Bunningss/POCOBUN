@@ -10,12 +10,13 @@
 
     .navContainer {
         max-width: 1024px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .logoContainer {
-            width: 20%;
+            width: 25%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -27,11 +28,7 @@
             }
 
             .logo {
-                width: 50%;
-
-                @include mobile {
-                    width: 60%;
-                }
+                width: 80px;
             }
         }
 
@@ -39,8 +36,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 60%;
+            width: 50%;
             color: var(--white);
+
+            .listItem {
+                color: inherit;
+            }
 
             @include mobile {
                 display: none;
@@ -48,7 +49,7 @@
         }
 
         .bagWrapper {
-            width: 20%;
+            width: 25%;
             display: flex;
             justify-content: center;
             align-items: center;

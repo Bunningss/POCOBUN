@@ -7,8 +7,10 @@
     margin: 10px 5px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--secondary);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    user-select: none;
 
     @include mobile {
         height: 460px;
@@ -29,18 +31,17 @@
             .textZone {
                 height: 30%;
                 width: 100%;
-                color: #000;
 
-                p {
+                .text {
                     padding: 15px 0;
                     text-transform: capitalize;
 
-                    @include mobile {
-                        font-size: 16px;
+                    &.price {
+                        color: var(--accentColor);
                     }
                 }
 
-                h4 {
+                .title {
                     font-weight: 600;
                     text-transform: capitalize;
                 }

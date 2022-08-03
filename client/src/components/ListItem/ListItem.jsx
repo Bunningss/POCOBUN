@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ListItem = ({ item, handleClick }) => {
   return (
     <Link className='listItemContainer' to={item.href} onClick={handleClick}>
-      <li className="listItem">{item.name}</li>
+      <li className="listItem text">{item.name}</li>
     </Link>
   )
 }

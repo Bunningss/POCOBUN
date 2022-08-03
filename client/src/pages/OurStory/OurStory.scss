@@ -28,30 +28,12 @@
             padding-left: 1%;
             padding-right: 1%;
 
-            .storyHeader {
-                font-size: 65px;
-                font-weight: 500;
-
-                @include ipad {
-                    font-size: 50px;
-                }
-
-                @include tab {
-                    font-size: 40px;
-                }
-
-                @include mobile {
-                    font-size: 30px;
-                }
+            .header {
+                margin: 20px 0;
             }
 
-            .storyText {
-                font-size: 18px;
-                font-weight: 400;
-
-                @include mobile {
-                    font-size: 16px;
-                }
+            .text {
+                line-height: 30px;
             }
 
             .storyImgWrapper {
@@ -123,6 +105,13 @@
                     }
                 }
             }
+
+            .textZone {
+
+                .text {
+                    line-height: 30px;
+                }
+            }
         }
 
         .storyRight {
@@ -131,30 +120,12 @@
             padding-left: 1%;
             padding-right: 1%;
 
-            .storyHeader {
-                font-size: 65px;
-                font-weight: 500;
-
-                @include ipad {
-                    font-size: 50px;
-                }
-
-                @include tab {
-                    font-size: 40px;
-                }
-
-                @include mobile {
-                    font-size: 30px;
-                }
+            .header {
+                margin: 20px 0;
             }
 
-            .storyText {
-                font-size: 18px;
-                font-weight: 400;
-
-                @include mobile {
-                    font-size: 16px;
-                }
+            .text {
+                line-height: 30px;
             }
 
             .rightImgWrapper {
@@ -224,6 +195,13 @@
                         height: 100%;
                         width: 100%;
                     }
+                }
+            }
+
+            .textZone {
+
+                .text {
+                    line-height: 30px;
                 }
             }
         }

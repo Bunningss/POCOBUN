@@ -12,7 +12,7 @@ const LargeCard = ({ pack }) => {
         <div className='largeCard'>
             <div className="largeCardContainer">
                 <h4 className="title">{name}</h4>
-                <h4 className="subheader">Only at {price}£</h4>
+                <h4 className="subheader">Only at {price} £</h4>
                 <div className="productContent">
                     <img src={image} alt="" className="productImg" />
                     <div className="productDetails">

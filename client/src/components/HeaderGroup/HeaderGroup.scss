@@ -1,0 +1,18 @@
+.headerGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+
+    .header {
+        text-transform: capitalize;
+    }
+
+    .text {
+        text-transform: capitalize;
+        color: var(--accentColor);
+        line-height: 28px;
+        font-weight: 500;
+    }
+}

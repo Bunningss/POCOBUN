@@ -1,10 +1,14 @@
 import './Section.scss';
 import Card from '../Card/Card'
+import HeaderGroup from '../HeaderGroup/HeaderGroup';
 
-const Section = ({ header, section }) => {
+const Section = ({smHeader, header, section }) => {
   return (
     <div className="section">
-        <h2 className='sectionHeader'>{header}</h2>
+      {
+        smHeader && 
+        <HeaderGroup smHeader={smHeader} header={header}/>
+      }
         <div className="cardContainer">
           {
             section?.map((item) => (

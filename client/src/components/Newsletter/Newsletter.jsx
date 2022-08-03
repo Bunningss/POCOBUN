@@ -4,6 +4,7 @@ import FormInput from '../FormInput/FormInput'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Terms from '../Terms/Terms';
+import HeaderGroup from '../HeaderGroup/HeaderGroup';
 
 const Newsletter = () => {
   const [ error, setError ] = useState('');
@@ -56,10 +57,7 @@ const Newsletter = () => {
   return (
     <div className='newsletter'>
         <div className="wrapper">
-            <div className="textZone">
-                <h2 className="headerText">Newsletter</h2>
-                <p>Get updates about your favourite products</p>
-            </div>
+          <HeaderGroup header={"subscribe to our newsletter"} smHeader={"— newsletter"}/>
             <form action="" onSubmit={onClick} className="newsForm">
               {
                 inputs.map((input) => (
