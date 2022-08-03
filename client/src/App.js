@@ -18,6 +18,7 @@ import Error404 from './pages/Error404/Error404';
 import Blogs from './pages/Blogs/Blogs';
 import Column from './pages/Column/Column';
 import Contact from './pages/Contact/Contact';
+import OurStory from './pages/OurStory/OurStory';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -37,6 +38,7 @@ function App() {
         <Route exact path='/myaccount' element={<Account/>}/>
         <Route exact path='/blog' element={<Blogs/>}/>
         <Route exact path='/blog/:id' element={<Column/>}/>
+        <Route exact path='/story' element={<OurStory/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
       </Routes>
       <Newsletter/>
