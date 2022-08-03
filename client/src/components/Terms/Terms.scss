@@ -1,15 +1,13 @@
 @import '../../global.scss';
 
 .agreement {
-    margin: 5px 0;
+    margin: 10px 0 5px 0;
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
 
-    p {
-        font-weight: 500;
-        font-size: 16px;
+    .text {
 
         a {
             color: var(--accentColor);

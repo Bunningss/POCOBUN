@@ -36,6 +36,15 @@
             align-items: center;
         }
 
+        .header {
+            margin: 15px 0;
+        }
+
+        .title {
+            color: var(--accentColor);
+            margin: 0 0 10px 0;
+        }
+
         .features {
             display: flex;
             flex-direction: column;

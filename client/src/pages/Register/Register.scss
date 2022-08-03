@@ -6,10 +6,6 @@
     justify-content: center;
     align-items: center;
 
-    @include tab {
-        height: calc(100vh - 60px);
-    }
-
     .wrapper {
         width: 500px;
         background-color: var(--white);
@@ -24,7 +20,7 @@
             font-size: 28px;
             font-weight: 500;
             padding: 10px 0;
-            text-decoration: underline crimson;
+            text-decoration: underline var(--accentColor);
         }
 
         .registerForm {

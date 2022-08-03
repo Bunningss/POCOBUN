@@ -37,8 +37,8 @@ const Product = () => {
         <Buystrip/>
       </div>
       <div className="productRight">
-        <h2 className="title">{product.name}</h2>
-        <h3 className="subheader">Price - {product.price}£</h3>
+        <h2 className="header">{product.name}</h2>
+        <h3 className="title">£{product.price}</h3>
         <div className="features">
           <Feature/>
           <Feature/>
