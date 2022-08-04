@@ -77,6 +77,14 @@ $mobile: 500px;
     }
 }
 
+$sMobile: 399px;
+
+@mixin sMobile {
+    @media (max-width: #{$sMobile}) {
+        @content
+    }
+}
+
 // Universal
 
 .default {

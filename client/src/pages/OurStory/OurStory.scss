@@ -12,6 +12,10 @@
         position: relative;
         display: flex;
 
+        @include sMobile {
+            flex-direction: column;
+        }
+
         .storyBg {
             position: absolute;
             width: 100%;
@@ -27,6 +31,10 @@
             width: 50%;
             padding-left: 1%;
             padding-right: 1%;
+
+            @include sMobile {
+                width: 100%;
+            }
 
             .header {
                 margin: 20px 0;
@@ -119,6 +127,15 @@
             padding-top: 500px;
             padding-left: 1%;
             padding-right: 1%;
+
+            @include mobile {
+                padding-top: 400px;
+            }
+
+            @include sMobile {
+                width: 100%;
+                padding-top: 0;
+            }
 
             .header {
                 margin: 20px 0;

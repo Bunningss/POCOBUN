@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.importantLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282627;
+    padding: 15px 5px;
+
+    .linksWrapper {
+        max-width: 1024px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .address {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include mobile {
+                margin: 15px 0;
+            }
+        }
+    }
+}

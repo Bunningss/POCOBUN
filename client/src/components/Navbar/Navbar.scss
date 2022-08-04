@@ -37,11 +37,6 @@
             align-items: center;
             justify-content: space-between;
             width: 50%;
-            color: var(--white);
-
-            .listItem {
-                color: inherit;
-            }
 
             @include mobile {
                 display: none;

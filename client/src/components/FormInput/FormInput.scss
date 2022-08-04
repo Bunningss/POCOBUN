@@ -6,12 +6,13 @@
     outline: none;
     border-radius: 5px;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     margin: 5px 0 2px 0;
 
     @include mobile {
         padding: 10px 15px;
+        font-size: 16px;
     }
 
     &:invalid[focused="true"] ~ .error {

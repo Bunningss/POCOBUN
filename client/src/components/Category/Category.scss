@@ -11,6 +11,7 @@
     &:hover {
 
         .text {
+            color: var(--accentColor);
             &::after {
                 content: '';
                 position: absolute;
@@ -47,5 +48,6 @@
         position: relative;
         width: max-content;
         padding: 5px 0;
+        transition: all .3s ease;
     }
 }

@@ -30,6 +30,12 @@ import pack2 from './img/products/package (2).png';
 import pack3 from './img/products/package (3).png';
 import pack4 from './img/products/package (4).png';
 
+// icons
+import location from './img/location-org.png';
+import email from './img/mail-org.png';
+import clock from './img/clock-org.png';
+import phone from './img/phone-org.png';
+
 export const sliderData = [
     {
         id: 1,
@@ -230,3 +236,100 @@ export const product = {
     tag: "Look Smart, live smart",
     image: [watch, watch2, watch3]
 }
+
+export const importantLinks = [
+    {
+        id: 1,
+        title: "Quick Links",
+        links: [
+            {
+                id: 1,
+                name: "Home",
+                href: "/"
+            },
+            {
+                id: 2,
+                name: "Shop",
+                href: "/store"
+            },
+            {
+                id: 3,
+                name: "Blog",
+                href: "/blog"
+            },
+            {
+                id: 4,
+                name: "Our Story",
+                href: "/story"
+            },
+            {
+                id: 5,
+                name: "Contact Us",
+                href: "/contact"
+            },
+        ]
+    },
+    {
+        id: 2,
+        title: "Featured",
+        links: [
+            {
+                id: 1,
+                name: "Terms of Service",
+                href: "/terms"
+            },
+            {
+                id: 2,
+                name: "Privacy Policy",
+                href: "/policy"
+            },
+            {
+                id: 3,
+                name: "Support",
+                href: ""
+            },
+            {
+                id: 4,
+                name: "Shipping & Returns",
+                href: ""
+            },
+            {
+                id: 5,
+                name: "Careers",
+                href: ""
+            },
+            {
+                id: 6,
+                name: "Our Story",
+                href: "/story"
+            },
+        ]
+    },
+];
+
+export const addressGroup = [
+    {
+        id: 1,
+        title: "Store Address",
+        info: "",
+        icon: location
+    },
+    {
+        id: 2,
+        title: "Email Us",
+        info: "pocobun@pocobun.co.uk",
+        icon: email
+    },
+    {
+        id: 3,
+        title: "Phone Number",
+        info: "++8801873228724",
+        icon: phone
+    },
+    {
+        id: 4,
+        title: "Open Hours",
+        info: "Sun - Friday: 10AM - 7PM",
+        icon: clock
+    },
+];

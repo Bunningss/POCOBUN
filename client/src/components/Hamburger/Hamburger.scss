@@ -1,8 +1,8 @@
 @import '../../global.scss';
 
 .hamburger {
-    width: 40px;
-    height: 20px;
+    width: 40px !important;
+    height: 20px !important;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -17,10 +17,10 @@
     &.active {
 
         .line {
-            background-color: #000;
+            background-color: var(--fontColor);
 
             &:nth-child(1) {
-                transform: rotate(45deg) translate(4px, -.5px);
+                transform: rotate(45deg) translate(2px, -1.6px); 
             }
             &:nth-child(2) {
                 transform: rotate(-45deg) translate(0, 0);
@@ -29,6 +29,11 @@
                 transform: rotate(45deg) translate(0, -8px);
             }
 
+            @include sMobile {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(2px, -1.45px);
+                }
+            }
         }
 
     }

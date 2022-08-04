@@ -16,5 +16,11 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
+
+        @include mobile {
+            .text {
+                font-size: 14px;
+            }
+        }
     }
 }

@@ -19,6 +19,7 @@ import Blogs from './pages/Blogs/Blogs';
 import Column from './pages/Column/Column';
 import Contact from './pages/Contact/Contact';
 import OurStory from './pages/OurStory/OurStory';
+import ImportantLiknks from './components/ImportantLiknks/ImportantLiknks';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -43,6 +44,7 @@ function App() {
       </Routes>
       <Newsletter/>
       <Disclaimer/>
+      <ImportantLiknks/>
       <Footer/>
     </BrowserRouter>
   );
