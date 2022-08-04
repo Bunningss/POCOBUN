@@ -14,10 +14,17 @@ import electronics from './img/electronics.png';
 import sports from './img/sports.png';
 
 // products
-import drink4 from './img/products/drink (4).png';
-import watch from './img/products/watche (1).png';
-import watch2 from './img/products/watche (2).png';
-import watch3 from './img/products/watche (3).png';
+import soda from './img/products/Soda.webp';
+import watch from './img/products/watche - 1.webp';
+import watch2 from './img/products/watche - 2.webp';
+import watch3 from './img/products/watche - 3.webp';
+import beer from './img/products/beer.webp';
+import beer2 from './img/products/beer - 2.webp';
+import heeled_shoe from './img/products/heeled_shoe.webp';
+import red_high_heel from './img/products/red_high_heel.webp';
+import leather_shoe from './img/products/leather_shoe.webp';
+import sneaker_shoes from './img/products/sneakers_shoes.webp';
+import sports_kit from './img/products/sports_kit.webp';
 
 // package
 import pack from './img/products/package (1).png';
@@ -116,7 +123,7 @@ export const loginOptions = [
     },
 ];
 
-export const pastaPacks = [
+export const packages = [
     {
         id: 1,
         name: "Gift Package",
@@ -150,24 +157,129 @@ export const pastaPacks = [
 export const productsData = [
     {
         id: 1,
-        name: "Energy Drink",
-        price: 10.99,
+        name: "Energy Soda",
+        price: "10.99",
         tag: "Feel the energy inside",
-        image: [drink4]
+        image: [soda],
+        features: []
     },
     {
         id: 2,
         name: "Smart Watch",
-        price: 11.99,
+        price: "11.99",
         tag: "Look Smart, live smart",
-        image: [watch]
+        image: [watch],
+        features: []
+    },
+    {
+        id: 3,
+        name: "Smart Watch",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [watch2],
+        features: []
+    },
+    {
+        id: 4,
+        name: "Snicker Shoe",
+        price: "10.99",
+        tag: "Comfort comes with style",
+        image: [sneaker_shoes],
+        features: []
     },
     {
         id: 5,
+        name: "Beer",
+        price: "11.99",
+        tag: "excellent beverage",
+        image: [beer],
+        features: []
+    },
+    {
+        id: 6,
+        name: "Beer Soda",
+        price: "13.99",
+        tag: "Excellent Beverage",
+        image: [beer2],
+        features: []
+    },
+    {
+        id: 7,
+        name: "High Heel",
+        price: "13.99",
+        tag: "Look Stunning",
+        image: [red_high_heel],
+        features: []
+    },
+    {
+        id: 8,
+        name: "Leather Shoe",
+        price: "13.99",
+        tag: "Smart look with comfort",
+        image: [leather_shoe],
+        features: []
+    },
+    {
+        id: 9,
+        name: "Heeled Shoe",
+        price: "13.99",
+        tag: "For the ambitious",
+        image: [heeled_shoe],
+        features: []
+    },
+    {
+        id: 10,
+        name: "Sports Kit",
+        price: "13.99",
+        tag: "Play the game",
+        image: [sports_kit],
+        features: []
+    },
+    {
+        id: 11,
         name: "Smart Watch",
-        price: 13.99,
+        price: "13.99",
         tag: "Look Smart, live smart",
-        image: [watch2]
+        image: [watch3],
+        features: []
+    },
+];
+
+export const sectionData = [
+    {
+        id: 1,
+        name: "Beer Soda",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [beer2]
+    },
+    {
+        id: 2,
+        name: "Beer",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [beer]
+    },
+    {
+        id: 3,
+        name: "Snicker Shoe",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [sneaker_shoes]
+    },
+    {
+        id: 4,
+        name: "Smart Watch",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [watch3]
+    },
+    {
+        id: 5,
+        name: "Energy Soda",
+        price: "13.99",
+        tag: "Look Smart, live smart",
+        image: [soda]
     },
 ];
 
@@ -323,7 +435,7 @@ export const blogs = [
     },
     {
         id: 3,
-        title: "Atlantic Pacific",
+        title: "Atlantic - Pacific",
         date: "22 July 2022",
         img: blog1
     },

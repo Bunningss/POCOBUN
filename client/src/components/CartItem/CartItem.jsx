@@ -1,8 +1,8 @@
 import './CartItem.scss';
 import WarningButton from '../WarningButton/WarningButton';
-import demo from '../../img/products/watche (1).png';
+import demo from '../../img/products/watche - 1.webp';
 
-const CartItem = ({ item }) => {
+const CartItem = () => {
   return (
     <div className='cartItem'>
         <div className="imageContainer">

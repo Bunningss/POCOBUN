@@ -1,5 +1,5 @@
 import './OrderItem.scss';
-import demo from '../../img/products/watche (1).png';
+import demo from '../../img/products/watche - 1.webp';
 
 const OrderItem = () => {
   return (
