@@ -1,29 +1,31 @@
 import './Slider.scss';
-import arrow from '../../img/arrow-outlined-crimson.png';
-import { useRef } from 'react';
+import arrow from '../../img/arrow-outlined.png';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Slider = ({ items }) => {
-  const sliderRef = useRef();
-  let index = 1;
+  const [ index, setIndex ] = useState(0);
 
   const nextSlide = () => {
-    sliderRef.current.style.transform = `translateX(${index * -100}%)`;
-    index++;
-    if (index > items.length - 1) {
-      index = 0;
+    setIndex(index+1)
+    if (index >= items.length - 1) {
+      setIndex(0)
     }
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      nextSlide();
+    }, 3000)
+    // clearTimeout(timeout);
+  }, [index])
+
   return (
     <div className='slider'>
-      <div ref={sliderRef} className="wrapper">
-        {
-          items.map((item) => (
-            <img className='sliderImg' src={item.img} alt="Slider Image" key={item.id}/>
-          ))
-        }
+      <div className="wrapper">
+        <img src={items[index]} alt="" className="sliderImg" />
       </div>
-      <img src={arrow} onClick={nextSlide} alt="Arrow" className="sliderIcon iconRight" />
+      {/* <img src={arrow} onClick={nextSlide} alt="Arrow" className="sliderIcon iconRight" /> */}
     </div>
   )
 }

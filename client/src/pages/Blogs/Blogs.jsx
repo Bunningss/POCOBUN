@@ -1,5 +1,6 @@
 import Article from '../../components/Article/Article';
 import './Blogs.scss';
+import { blogs } from '../../staticData';
 
 const Blogs = () => {
   return (
@@ -10,13 +11,11 @@ const Blogs = () => {
             </h2>
         </div>
         <div className="blogsBottom">
-            <Article/>
-            <Article/>
-            <Article/>
-            <Article/>
-            <Article/>
-            <Article/>
-            <Article/>
+          {
+            blogs.map((blog) => (
+              <Article blog={blog}/>
+            ))
+          }
         </div>
     </div>
   )

@@ -1,5 +1,4 @@
 import './Gallery.scss';
-import demo from '../../img/products/drink (1).png';
 
 const Gallery = ({ setModalImg, images }) => {
   return (

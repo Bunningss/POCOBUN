@@ -1,17 +1,17 @@
 import './Article.scss';
 import { Link } from 'react-router-dom';
-import demo from '../../img/Blogs/blog (2).jpg';
 
-const Article = () => {
+const Article = ({ blog }) => {
+  console.log(blog)
   return (
     <Link className='article' to='/blog/sdh'>
       <article className="articleWrapper">
           <div className="articleImgContainer">
-            <img className='articleImg' src={demo} alt="" />
+            <img className='articleImg' src={blog.img} alt="" />
           </div>
           <div className="articleInfo">
-              <h6 className="subheader underline">Waarom je een natuurlijkedeodorant moet proberen</h6>
-              <h6 className="subheader">31/07/2022</h6>
+              <h6 className="subheader underline">{blog.title}</h6>
+              <h6 className="subheader">{blog.date}</h6>
           </div>
       </article>
     </Link>

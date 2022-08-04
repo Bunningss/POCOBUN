@@ -1,30 +1,25 @@
-//BANNERS
-import summerSale from './img/summer sale.webp';
-import bigSale from './img/big sale.webp';
-import beautyProduct from './img/beauty product.webp';
-import sportswear from './img/SPORTSWEAR.webp';
-import makeup from './img/makeup.webp';
-// cats
+// banner slider
+import slider2 from './img/sliderBanner/makeup1.webp';
+import slider1 from './img/sliderBanner/makeup.webp';
+import slider3 from './img/sliderBanner/chocolate.webp';
+import slider4 from './img/sliderBanner/gadget.webp';
+import banner1 from './img/sliderBanner/shoe collection.webp';
+import banner2 from './img/sliderBanner/SPORTSWEAR.webp';
+
+// categories
 import health from './img/health.png';
 import fashion from './img/fashion.png';
 import groceries from './img/groceries.png';
 import electronics from './img/electronics.png';
 import sports from './img/sports.png';
-//PRODUCTS
-import drink from './img/products/drink (1).png';
-import drink2 from './img/products/drink (2).png';
-import drink3 from './img/products/drink (3).png';
+
+// products
 import drink4 from './img/products/drink (4).png';
-import flipflop from './img/products/flip flop (1).png';
-import flipflop2 from './img/products/flip flop (2).png';
-import flipflop3 from './img/products/flip flop (3).png';
-import flipflop4 from './img/products/flip flop (4).png';
-import snicker from './img/products/snicker (1).png';
-import snicker2 from './img/products/snicker (2).png';
 import watch from './img/products/watche (1).png';
 import watch2 from './img/products/watche (2).png';
 import watch3 from './img/products/watche (3).png';
-//PACKAGE
+
+// package
 import pack from './img/products/package (1).png';
 import pack2 from './img/products/package (2).png';
 import pack3 from './img/products/package (3).png';
@@ -36,29 +31,22 @@ import email from './img/mail-org.png';
 import clock from './img/clock-org.png';
 import phone from './img/phone-org.png';
 
-export const sliderData = [
-    {
-        id: 1,
-        img: makeup,
-    },
-    {
-        id: 2,
-        img: summerSale
-    },
-    {
-        id: 3,
-        img: beautyProduct
-    },
-];
+//blogs
+import blog1 from './img/Blogs/blog (1)-1.webp';
+import blog2 from './img/Blogs/blog (2).webp';
+
+export const sliderData = [slider1, slider3, slider2, slider4]
 
 export const bannerData = [
     {
         id: 1,
-        img: bigSale
+        img: banner1,
+        href: "/store?category=fashion"
     },
     {
         id: 2,
-        img: sportswear
+        img: banner2,
+        href: "/store?category=s&o"
     },
 ];
 
@@ -165,35 +153,21 @@ export const productsData = [
         name: "Energy Drink",
         price: 10.99,
         tag: "Feel the energy inside",
-        image: [drink4, drink2, drink3, drink]
+        image: [drink4]
     },
     {
         id: 2,
         name: "Smart Watch",
         price: 11.99,
         tag: "Look Smart, live smart",
-        image: [watch, watch2, watch3]
-    },
-    {
-        id: 3,
-        name: "Snickers",
-        price: 12.99,
-        tag: "elegant lifestyle",
-        image: [snicker2, snicker]
-    },
-    {
-        id: 4,
-        name: "Flip Flop",
-        price: 13.99,
-        tag: "feel comfortable with style",
-        image: [flipflop, flipflop2, flipflop3, flipflop4]
+        image: [watch]
     },
     {
         id: 5,
         name: "Smart Watch",
         price: 13.99,
         tag: "Look Smart, live smart",
-        image: [watch2, watch2, watch]
+        image: [watch2]
     },
 ];
 
@@ -311,7 +285,7 @@ export const addressGroup = [
     {
         id: 1,
         title: "Store Address",
-        info: "",
+        info: "3 London Road, Essex, IG91 2GZ",
         icon: location
     },
     {
@@ -331,5 +305,56 @@ export const addressGroup = [
         title: "Open Hours",
         info: "Sun - Friday: 10AM - 7PM",
         icon: clock
+    },
+];
+
+export const blogs = [
+    {
+        id: 1,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog1
+    },
+    {
+        id: 2,
+        title: "Summer Blues",
+        date: "22 July 2022",
+        img: blog2
+    },
+    {
+        id: 3,
+        title: "Atlantic Pacific",
+        date: "22 July 2022",
+        img: blog1
+    },
+    {
+        id: 4,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog2
+    },
+    {
+        id: 5,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog1
+    },
+    {
+        id: 6,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog2
+    },
+    {
+        id: 7,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog1
+    },
+    {
+        id: 8,
+        title: "What i am loving RN",
+        date: "22 July 2022",
+        img: blog2
     },
 ];

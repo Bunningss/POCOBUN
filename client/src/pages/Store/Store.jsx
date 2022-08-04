@@ -2,18 +2,22 @@ import Category from '../../components/Category/Category';
 import './Store.scss';
 import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { categories, productsData } from '../../staticData';
+import { useLocation } from 'react-router-dom';
 
 const Store = () => {
+    const cat = useLocation().search
     const store = useRef();
 
-    const handleClick = () => {
-        store.current.scrollIntoView({
-            behavior: "smooth",
-            duration: 800
-        })
-    };
+    useEffect(() => {
+        if (cat) {
+            store.current.scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+    }, [cat]);
+
 
   return (
     <div className='store default'>
@@ -22,7 +26,7 @@ const Store = () => {
             <div className="categoryContainer">
                 {
                     categories.map((item) => (
-                        <Category handleClick={handleClick} item={item} key={item.id}/>
+                        <Category item={item} key={item.id}/>
                     ))
                 }
             </div>
