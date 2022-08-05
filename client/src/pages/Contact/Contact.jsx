@@ -7,6 +7,7 @@ import instagram from '../../img/instagram.png';
 import twitter from '../../img/twitter.png';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import FormInput from '../../components/FormInput/FormInput';
+import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const Contact = () => {
   const inputs = [
@@ -33,7 +34,7 @@ const Contact = () => {
   return (
     <div className='contact default defaultPadding'>
         <div className="contactWrapper">
-            <h2 className="header">Get in touch</h2>
+            <HeaderGroup smHeader={"get in touch"} header={"Send us a message"}/>
             <div className="contactContainer">
               <div className="contactLeft">
                 <h4 className="subheader">More Information</h4>

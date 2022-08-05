@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .store {
-    padding: 10px;
+    padding: 5px;
 
     .categories {
 
@@ -32,6 +32,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+
+        .card {
+            width: 300px;
+        }
     }
 }

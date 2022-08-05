@@ -5,7 +5,9 @@ import './Details.scss';
 const Details = ({ c }) => {
   return (
     <div className='productInfo'>
-        <HeaderGroup smHeader={c.title}/>
+      {
+        c.title && <HeaderGroup smHeader={c.title}/>
+      }
         <p className='text'>{c.info}</p>
         {
           c.rating && <Rating rating={c.rating}/>

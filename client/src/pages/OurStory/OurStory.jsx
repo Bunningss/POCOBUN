@@ -1,6 +1,7 @@
 import './OurStory.scss';
 import fashion from '../../img/fashion (1).jpg';
 import fashion2 from '../../img/fashion (2).jpg';
+import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const OurStory = () => {
   return (
@@ -8,7 +9,7 @@ const OurStory = () => {
         <div className="storyWrapper defaultPadding">
             <div className="storyBg"></div>
             <div className="storyLeft">
-                <h2 className="header">About Us</h2>
+                <HeaderGroup smHeader={"about us"} header={"Know our story"}/>
                 <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex impedit soluta quis voluptatem? Porro, autem adipisci? Laboriosam pariatur autem quas?
                 </p>
@@ -25,7 +26,7 @@ const OurStory = () => {
                 </div>
             </div>
             <div className="storyRight">
-                <h2 className="header">What we do?</h2>
+                <HeaderGroup smHeader={"what we do?"} header={"our work"}/>
                 <p className="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti facere consequatur earum veritatis neque delectus est eveniet eligendi officia!
                 </p>

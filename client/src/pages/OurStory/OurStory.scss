@@ -6,6 +6,10 @@
     justify-content: center;
     user-select: none;
 
+    .headerGroup {
+        margin: 15px 0;
+    }
+
     .storyWrapper {
         max-width: 1024px;
         width: 100%;
@@ -34,10 +38,6 @@
 
             @include sMobile {
                 width: 100%;
-            }
-
-            .header {
-                margin: 20px 0;
             }
 
             .text {
@@ -135,10 +135,6 @@
             @include sMobile {
                 width: 100%;
                 padding-top: 0;
-            }
-
-            .header {
-                margin: 20px 0;
             }
 
             .text {

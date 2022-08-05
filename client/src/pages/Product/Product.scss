@@ -53,7 +53,8 @@
             }
 
             .subheader {
-                text-decoration: line-through var(--fontColor);
+                text-decoration: line-through;
+                color: var(--accentSecondary);
             }
         }
 

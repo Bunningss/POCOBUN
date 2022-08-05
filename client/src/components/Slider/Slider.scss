@@ -6,6 +6,7 @@
     margin: 10px 0;
     position: relative;
     overflow: hidden;
+    user-select: none;
 
     @include laptop {
         height: 600px;
