@@ -8,6 +8,7 @@ const NavHover = ({ visible }) => {
         <Link to='/login'>Login</Link>
         <Link to='/register'>Sign Up</Link>
         <Link to='/myorders'>My orders</Link>
+        <Link to='/wishlist'>Wishlist</Link>
         <div className="sbagWrapper">
             <Link to='/Cart'>Shopping Bag</Link>
             <NumberWidget/>

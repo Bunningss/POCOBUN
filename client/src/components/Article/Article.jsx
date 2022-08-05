@@ -2,7 +2,6 @@ import './Article.scss';
 import { Link } from 'react-router-dom';
 
 const Article = ({ blog }) => {
-  console.log(blog)
   return (
     <Link className='article' to='/blog/sdh'>
       <article className="articleWrapper">

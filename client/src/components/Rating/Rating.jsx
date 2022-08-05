@@ -15,8 +15,8 @@ const Rating = ({rating}) => {
             <HeaderGroup smHeader={"Leave a review"} header={"Rate this product"}/>
             <div className="reviewGroup">
                 {
-                    reviewNum.map((r) => (
-                        <Review r={r} handleClick={onclick}/>
+                    reviewNum.map((r, index) => (
+                        <Review r={r} key={index} handleClick={onclick}/>
                     ))
                 }
             </div>

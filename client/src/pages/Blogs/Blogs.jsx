@@ -12,7 +12,7 @@ const Blogs = () => {
         <div className="blogsBottom">
           {
             blogs.map((blog) => (
-              <Article blog={blog}/>
+              <Article blog={blog} key={blog.id}/>
             ))
           }
         </div>

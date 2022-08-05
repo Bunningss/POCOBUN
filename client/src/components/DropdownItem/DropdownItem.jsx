@@ -15,8 +15,8 @@ const DropdownItem = ({ detail }) => {
         </div>
         <div className={dropdown ? "dropdownDetails vis" : "dropdownDetails"}>
             {
-                content.map((c) => (
-                    <Details c={c} key={c.id}/>
+                content.map((c, index) => (
+                    <Details c={c} key={index}/>
                 ))
             }
         </div>

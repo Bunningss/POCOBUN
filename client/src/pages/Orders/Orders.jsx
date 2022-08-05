@@ -12,7 +12,7 @@ const Orders = () => {
           <img src={arrow} alt="" className="icon" />
         </Link>
         <h2 className="header">Products you've ordered.</h2>
-        <p className="text">Only purchases from the last 18 months will be shown here.</p>
+        <h4 className="title">Only purchases from the last 18 months will be shown here.</h4>
         <div className="ordersContent">
           <Order />
           <Order />

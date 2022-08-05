@@ -20,11 +20,14 @@ import Column from './pages/Column/Column';
 import Contact from './pages/Contact/Contact';
 import OurStory from './pages/OurStory/OurStory';
 import ImportantLiknks from './components/ImportantLiknks/ImportantLiknks';
+import BackToTop from './components/BackToTop/BackToTop';
+import Wishlist from './pages/Wishlist/Wishlist';
 
 function App() {
   const [ active, setActive ] = useState(false);
   return (
     <BrowserRouter>
+    <BackToTop/>
       <Navbar active={active} setActive={setActive}/>
       <Sidebar active={active} setActive={setActive}/>
       <Routes>
@@ -36,6 +39,7 @@ function App() {
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
         <Route exact path='/myorders' element={<Orders/>}/>
+        <Route exact path='/wishlist' element={<Wishlist/>}/>
         <Route exact path='/myaccount' element={<Account/>}/>
         <Route exact path='/blog' element={<Blogs/>}/>
         <Route exact path='/blog/:id' element={<Column/>}/>

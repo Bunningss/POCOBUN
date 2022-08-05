@@ -7,7 +7,7 @@
     background-color: #fff;
 
     .ordersWrapper {
-        max-width: 1024px;
+        // max-width: 1024px;
         width: 100%;
 
         .linkSection {
@@ -33,14 +33,14 @@
         }
 
         .header {
-            margin: 40px 0;
+            margin: 15px 0;
 
             @include mobile {
                 margin: 20px 0;
             }
         }
 
-        .text {
+        .title {
             margin: 10px 0;
         }
     }

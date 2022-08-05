@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 // banner slider
 import slider2 from './img/sliderBanner/makeup1.webp';
 import slider1 from './img/sliderBanner/makeup.webp';
@@ -514,3 +515,20 @@ export const blogs = [
         img: blog2
     },
 ];
+// functions
+export const useWindowScrollPositions = () => {
+const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 })
+
+useEffect(() => {
+    function updatePosition() {
+        setPosition({ scrollX: window.scrollX, scrollY: window.scrollY })
+    }
+
+    window.addEventListener('scroll', updatePosition)
+    updatePosition()
+
+    return () => window.removeEventListener('scroll', updatePosition)
+}, [])
+
+return scrollPosition
+}
