@@ -32,12 +32,24 @@
                 height: 30%;
                 width: 100%;
 
+                .priceGroup {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
                 .text {
                     padding: 15px 0;
                     text-transform: capitalize;
 
                     &.price {
                         color: var(--accentColor);
+                    }
+
+                    &.oldPrice {
+                        color: var(--accentSecondary);
+                        font-size: 14px;
+                        text-decoration: line-through var(--accentSecondary);
                     }
                 }
 

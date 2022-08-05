@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import Gallery from '../../components/Gallery/Gallery';
 import Modal from '../../components/Modal/Modal';
 import { product } from '../../staticData';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 const Product = () => {
   const [ quantity, setQuantity ] = useState(1);
@@ -38,7 +39,10 @@ const Product = () => {
       </div>
       <div className="productRight">
         <h2 className="header">{product.name}</h2>
-        <h3 className="title">£{product.price}</h3>
+        <div className="priceGroup">
+          <h3 className="subheader">£19.99</h3>
+          <h3 className="title">£{product.price}</h3>
+        </div>
         <div className="features">
           <Feature/>
           <Feature/>
@@ -58,6 +62,7 @@ const Product = () => {
 {/* Information Part */}
   <div className="pr-textZone">
     <h2 className="header">Product Information</h2>
+    <Dropdown details={product.details}/>
   </div>
     </>
   )

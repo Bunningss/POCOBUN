@@ -1,0 +1,36 @@
+@import '../../global.scss';
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .rating {
+        font-size: 20px;
+        padding: 10px 0;
+
+        span {
+            font-size: 65px;
+            color: var(--accentColor);
+
+            @include mobile {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .review {
+
+        .header {
+            margin: 0;
+        }
+
+        .reviewGroup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}

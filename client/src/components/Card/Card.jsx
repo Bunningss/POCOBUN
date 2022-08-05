@@ -10,7 +10,10 @@ const Card = ({ item }) => {
           <div className="textZone">
             <p className='text'>{item?.tag}</p>
             <h4 className='title'>{item?.name}</h4>
-            <p className='text price'>{item?.price}£</p>
+            <div className="priceGroup">
+              <p className="text oldPrice">20.99</p>
+              <p className='text price'>£{item?.price}</p>
+            </div>
           </div>
           <img src={item?.image[0]} alt="" className="cardImg" />
         </div>

@@ -8,7 +8,7 @@ const Sidebar = ({ active, setActive }) => {
     setActive(!active)
   };
   
-  
+  // freeze scrolling
   if ( active ) {
     document.body.style.overflow = "hidden";
   } else {

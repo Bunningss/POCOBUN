@@ -17,10 +17,10 @@ const Home = () => {
               <Banner item={item} key={item.id}/>
             ))
           }
-          <Section smHeader={"— new collection"} header={"Featured Products"} section={sectionData}/>
-          <Section smHeader={"— new collection"} header={"Hot Deals"} section={sectionData}/>
+          <Section smHeader={"new collection"} header={"Featured Products"} section={sectionData}/>
+          <Section smHeader={"new collection"} header={"Hot Deals"} section={sectionData}/>
           <div className="pastaPacks">
-            <HeaderGroup header={"Package Deals"} smHeader={"— gift pack collection"}/>
+            <HeaderGroup header={"Package Deals"} smHeader={"gift pack collection"}/>
             <div className="pastaPackWrapper">
               {
                 packages.map((pack) => (

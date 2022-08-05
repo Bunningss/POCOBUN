@@ -57,7 +57,7 @@ const Newsletter = () => {
   return (
     <div className='newsletter'>
         <div className="wrapper">
-          <HeaderGroup header={"subscribe to our newsletter"} smHeader={"— newsletter"}/>
+          <HeaderGroup header={"subscribe to our newsletter"} smHeader={"newsletter"}/>
             <form action="" onSubmit={onClick} className="newsForm">
               {
                 inputs.map((input) => (

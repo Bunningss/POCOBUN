@@ -320,7 +320,51 @@ export const product = {
     name: "Smart Watch",
     price: 11.99,
     tag: "Look Smart, live smart",
-    image: [watch, watch2, watch3]
+    image: [watch, watch2, watch3],
+    feature: [],
+    details: [
+        {
+            id: 1,
+            header: "Smart Watch details",
+            content: [
+                {
+                    id: 1,
+                    title: "Whats in the box",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur repellat maxime voluptates dolore voluptatem, perferendis facilis quia error vel, similique eveniet expedita asperiores officia veniam, iure qui quam tenetur aspernatur aliquam incidunt sunt. Minima assumenda, saepe enim reiciendis aliquam odio nostrum voluptatem dicta, dolor cumque earum accusantium eos officiis nam asperiores optio pariatur dolorem ducimus! Dolorem earum, libero cupiditate quibusdam ea impedit hic architecto. Soluta modi optio quidem delectus dignissimos dolor consectetur qui, veritatis cum distinctio eaque iste assumenda eveniet reiciendis nulla excepturi repellat molestias nisi minima doloremque incidunt sapiente officia odit? Tempore ipsa quam, quis rerum voluptate inventore est dolor expedita eaque neque ab doloribus voluptatem qui hic non culpa nemo sed fugiat dolores perspiciatis? Dignissimos recusandae dolores minima corporis in, dolorum unde vero maxime facilis quis architecto sunt placeat ipsa! Beatae nihil iusto, fuga, blanditiis ducimus cum ut atque, harum hic delectus incidunt voluptatibus nam? Dicta vel perferendis quam numquam. Fugit, odit quo. Aspernatur, assumenda ex optio facere rem delectus voluptas totam id dolorem sequi soluta obcaecati est culpa voluptatibus maxime ut quaerat in aliquid consequuntur reprehenderit error. Laudantium assumenda nostrum aspernatur, sed, totam cupiditate natus, dolore doloribus vero laboriosam quam animi deleniti amet. Similique esse laudantium quo suscipit dicta voluptatum. Rem magnam nostrum aspernatur, laborum vitae consectetur iure nulla sit eius porro praesentium illum excepturi ad recusandae, nam dolorem. Enim corrupti harum libero possimus velit laudantium dolorem ab rem dolor unde quaerat error ipsa illum nihil dolorum distinctio ducimus quisquam quam eius, quae fugit maiores perferendis aliquid. Asperiores, repellat ab aperiam commodi illum placeat dicta eos recusandae maxime esse facere necessitatibus molestias, magnam repudiandae, veniam harum similique nulla. Perferendis illum atque at eos fugiat molestiae in minima blanditiis velit eius. Hic corrupti autem fugit nam? Quaerat veniam officia maiores error nostrum quos magnam veritatis accusamus eius?"
+                },
+                {
+                    id: 2,
+                    title: "Specifications",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur repellat maxime voluptates dolore voluptatem, perferendis facilis quia error vel, similique eveniet expedita asperiores officia veniam, iure qui quam tenetur aspernatur aliquam incidunt sunt. Minima assumenda, saepe enim reiciendis aliquam odio nostrum voluptatem dicta, dolor cumque earum accusantium eos officiis nam asperiores optio pariatur dolorem ducimus! Dolorem earum, libero cupiditate quibusdam ea impedit hic architecto. Soluta modi optio quidem delectus dignissimos dolor consectetur qui, veritatis cum distinctio eaque iste assumenda eveniet reiciendis nulla excepturi repellat molestias nisi minima doloremque incidunt sapiente officia odit? Tempore ipsa quam, quis rerum voluptate inventore est dolor expedita eaque neque ab doloribus voluptatem qui hic non culpa nemo sed fugiat dolores perspiciatis? Dignissimos recusandae dolores minima corporis in, dolorum unde vero maxime facilis quis architecto sunt placeat ipsa! Beatae nihil iusto, fuga, blanditiis ducimus cum ut atque, harum hic delectus incidunt voluptatibus nam? Dicta vel perferendis quam numquam. Fugit, odit quo. Aspernatur, assumenda ex optio facere rem delectus voluptas totam id dolorem sequi soluta obcaecati est culpa voluptatibus maxime ut quaerat in aliquid consequuntur reprehenderit error. Laudantium assumenda nostrum aspernatur, sed, totam cupiditate natus, dolore doloribus vero laboriosam quam animi deleniti amet. Similique esse laudantium quo suscipit dicta voluptatum. Rem magnam nostrum aspernatur, laborum vitae consectetur iure nulla sit eius porro praesentium illum excepturi ad recusandae, nam dolorem. Enim corrupti harum libero possimus velit laudantium dolorem ab rem dolor unde quaerat error ipsa illum nihil dolorum distinctio ducimus quisquam quam eius, quae fugit maiores perferendis aliquid. Asperiores, repellat ab aperiam commodi illum placeat dicta eos recusandae maxime esse facere necessitatibus molestias, magnam repudiandae, veniam harum similique nulla. Perferendis illum atque at eos fugiat molestiae in minima blanditiis velit eius. Hic corrupti autem fugit nam? Quaerat veniam officia maiores error nostrum quos magnam veritatis accusamus eius?"
+                }
+            ] 
+        },
+        {
+            id: 2,
+            header: "FAQ",
+            content: [
+                {
+                    id: 1,
+                    title: "why should i buy?",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur repellat maxime voluptates dolore voluptatem, perferendis facilis quia error vel, similique eveniet expedita asperiores officia veniam, iure qui quam tenetur aspernatur aliquam incidunt sunt. Minima assumenda, saepe enim reiciendis aliquam odio nostrum voluptatem dicta, dolor cumque earum accusantium eos officiis nam asperiores optio pariatur dolorem ducimus! Dolorem earum, libero cupiditate quibusdam ea impedit hic architecto. Soluta modi optio quidem delectus dignissimos dolor consectetur qui, veritatis cum distinctio eaque iste assumenda eveniet reiciendis nulla excepturi repellat molestias nisi minima doloremque incidunt sapiente officia odit? Tempore ipsa quam, quis rerum voluptate inventore est dolor expedita eaque neque ab doloribus voluptatem qui hic non culpa nemo sed fugiat dolores perspiciatis? Dignissimos recusandae dolores minima corporis in, dolorum unde vero maxime facilis quis architecto sunt placeat ipsa! Beatae nihil iusto, fuga, blanditiis ducimus cum ut atque, harum hic delectus incidunt voluptatibus nam? Dicta vel perferendis quam numquam. Fugit, odit quo. Aspernatur, assumenda ex optio facere rem delectus voluptas totam id dolorem sequi soluta obcaecati est culpa voluptatibus maxime ut quaerat in aliquid consequuntur reprehenderit error. Laudantium assumenda nostrum aspernatur, sed, totam cupiditate natus, dolore doloribus vero laboriosam quam animi deleniti amet. Similique esse laudantium quo suscipit dicta voluptatum. Rem magnam nostrum aspernatur, laborum vitae consectetur iure nulla sit eius porro praesentium illum excepturi ad recusandae, nam dolorem. Enim corrupti harum libero possimus velit laudantium dolorem ab rem dolor unde quaerat error ipsa illum nihil dolorum distinctio ducimus quisquam quam eius, quae fugit maiores perferendis aliquid. Asperiores, repellat ab aperiam commodi illum placeat dicta eos recusandae maxime esse facere necessitatibus molestias, magnam repudiandae, veniam harum similique nulla. Perferendis illum atque at eos fugiat molestiae in minima blanditiis velit eius. Hic corrupti autem fugit nam? Quaerat veniam officia maiores error nostrum quos magnam veritatis accusamus eius?"
+                },
+                {
+                    id: 2,
+                    title: "Specifications",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur repellat maxime voluptates dolore voluptatem, perferendis facilis quia error vel, similique eveniet expedita asperiores officia veniam, iure qui quam tenetur aspernatur aliquam incidunt sunt. Minima assumenda, saepe enim reiciendis aliquam odio nostrum voluptatem dicta, dolor cumque earum accusantium eos officiis nam asperiores optio pariatur dolorem ducimus! Dolorem earum, libero cupiditate quibusdam ea impedit hic architecto. Soluta modi optio quidem delectus dignissimos dolor consectetur qui, veritatis cum distinctio eaque iste assumenda eveniet reiciendis nulla excepturi repellat molestias nisi minima doloremque incidunt sapiente officia odit? Tempore ipsa quam, quis rerum voluptate inventore est dolor expedita eaque neque ab doloribus voluptatem qui hic non culpa nemo sed fugiat dolores perspiciatis? Dignissimos recusandae dolores minima corporis in, dolorum unde vero maxime facilis quis architecto sunt placeat ipsa! Beatae nihil iusto, fuga, blanditiis ducimus cum ut atque, harum hic delectus incidunt voluptatibus nam? Dicta vel perferendis quam numquam. Fugit, odit quo. Aspernatur, assumenda ex optio facere rem delectus voluptas totam id dolorem sequi soluta obcaecati est culpa voluptatibus maxime ut quaerat in aliquid consequuntur reprehenderit error. Laudantium assumenda nostrum aspernatur, sed, totam cupiditate natus, dolore doloribus vero laboriosam quam animi deleniti amet. Similique esse laudantium quo suscipit dicta voluptatum. Rem magnam nostrum aspernatur, laborum vitae consectetur iure nulla sit eius porro praesentium illum excepturi ad recusandae, nam dolorem. Enim corrupti harum libero possimus velit laudantium dolorem ab rem dolor unde quaerat error ipsa illum nihil dolorum distinctio ducimus quisquam quam eius, quae fugit maiores perferendis aliquid. Asperiores, repellat ab aperiam commodi illum placeat dicta eos recusandae maxime esse facere necessitatibus molestias, magnam repudiandae, veniam harum similique nulla. Perferendis illum atque at eos fugiat molestiae in minima blanditiis velit eius. Hic corrupti autem fugit nam? Quaerat veniam officia maiores error nostrum quos magnam veritatis accusamus eius?"
+                }
+            ]
+        },
+        {
+            id: 3,
+            header: "Rating",
+            content: [
+                {
+                    rating: 4.6
+                }
+            ]
+        }
+    ]
 }
 
 export const importantLinks = [
