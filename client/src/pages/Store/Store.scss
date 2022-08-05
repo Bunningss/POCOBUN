@@ -34,7 +34,7 @@
         align-items: center;
 
         .card {
-            width: 300px;
+            width: calc(100% / 7);
         }
     }
 }

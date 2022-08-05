@@ -10,6 +10,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Modal from '../../components/Modal/Modal';
 import { product } from '../../staticData';
 import Dropdown from '../../components/Dropdown/Dropdown';
+import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const Product = () => {
   const [ quantity, setQuantity ] = useState(1);
@@ -61,7 +62,7 @@ const Product = () => {
     </div>
 {/* Information Part */}
   <div className="pr-textZone">
-    <h2 className="header">Product Information</h2>
+    <HeaderGroup smHeader={"details"} header={"product Information"}/>
     <Dropdown details={product.details}/>
   </div>
     </>
