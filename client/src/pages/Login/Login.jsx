@@ -1,7 +1,7 @@
 import './Login.scss';
+import { useState, useRef } from 'react';
 import FormInput from '../../components/FormInput/FormInput';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
-import { useState, useRef } from 'react';
 
 const Login = () => {
   const emailRef = useRef();

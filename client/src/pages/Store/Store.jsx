@@ -1,10 +1,10 @@
-import Category from '../../components/Category/Category';
 import './Store.scss';
+import { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { categories, productsData, sectionData } from '../../staticData';
+import Category from '../../components/Category/Category';
 import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
-import { useRef, useEffect } from 'react';
-import { categories, productsData, sectionData } from '../../staticData';
-import { useLocation } from 'react-router-dom';
 
 const Store = () => {
     const cat = useLocation().search

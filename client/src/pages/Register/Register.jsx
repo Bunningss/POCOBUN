@@ -1,8 +1,8 @@
 import './Register.scss';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import FormInput from '../../components/FormInput/FormInput';
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Terms from '../../components/Terms/Terms';
 
 const Register = () => {

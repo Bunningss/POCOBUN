@@ -8,7 +8,9 @@
         &:hover {
 
             .underline {
+
                 &::after {
+                    
                     content: '';
                     position: absolute;
                     bottom: 0;

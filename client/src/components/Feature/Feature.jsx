@@ -1,10 +1,9 @@
 import './Feature.scss';
 
-const Feature = ({ feature }) => {
+const Feature = () => {
   return (
         <div className="feature">
-            {/* <p></p> */}
-            <p><span>Advanced heartrate Sensor</span></p>
+            <p className='title'>Advanced heartrate Sensor</p>
         </div>
   )
 }

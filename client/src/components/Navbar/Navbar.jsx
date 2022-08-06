@@ -1,12 +1,12 @@
 import './Navbar.scss';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { linkBar } from '../../staticData';
 import logo from '../../img/logo wt.png';
 import bag from '../../img/shoppingBag.png';
 import Hamburger from '../Hamburger/Hamburger';
-import { linkBar } from '../../staticData';
 import ListItem from '../ListItem/ListItem';
 import NavHover from '../NavHover/NavHover';
-import { useState } from 'react';
 
 const Navbar = ({ active, setActive }) => {
   const [ vis, setVis ] = useState(false);

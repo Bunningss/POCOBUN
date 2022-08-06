@@ -1,4 +1,4 @@
-import Review from '../Review/Review';
+import Review from '../Rate/Rate';
 import './Rating.scss';
 import HeaderGroup from '../HeaderGroup/HeaderGroup';
 

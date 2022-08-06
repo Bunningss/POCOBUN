@@ -1,7 +1,6 @@
-import Slider from '../../components/Slider/Slider';
 import './Home.scss';
-import {  } from '../../staticData';
 import { bannerData, sectionData, sliderData, packages } from '../../staticData';
+import Slider from '../../components/Slider/Slider';
 import Section from '../../components/Section/Section';
 import Banner from '../../components/Banner/Banner';
 import LargeCard from '../../components/LargeCard/LargeCard';

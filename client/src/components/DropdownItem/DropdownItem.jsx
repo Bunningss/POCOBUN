@@ -1,7 +1,7 @@
 import './DropdownItem.scss';
+import { useState } from 'react';
 import plus from '../../img/plus-dropdown.png';
 import minus from '../../img/minus-dropdown.png';
-import { useState } from 'react';
 import Details from '../Details/Details';
 
 const DropdownItem = ({ detail }) => {

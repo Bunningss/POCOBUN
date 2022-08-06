@@ -1,6 +1,6 @@
 import './OurStory.scss';
-import fashion from '../../img/fashion (1).jpg';
-import fashion2 from '../../img/fashion (2).jpg';
+import fashion from '../../img/fashion (1).webp';
+import fashion2 from '../../img/fashion (2).webp';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const OurStory = () => {

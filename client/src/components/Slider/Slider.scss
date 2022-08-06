@@ -39,25 +39,4 @@
             object-fit: fill;
         }
     }
-
-    .sliderIcon {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 15px;
-        margin: auto;
-        width: 60px;
-        cursor: pointer;
-        transition: all .3s ease;
-
-        &.iconLeft {
-            left: 15px;
-            right: auto;
-            transform: rotate(180deg);
-        }
-
-        &:hover {
-            transform: scale(1.5);
-        }
-    }
 }

@@ -28,10 +28,10 @@ import sneaker_shoes from './img/products/sneakers_shoes.webp';
 import sports_kit from './img/products/sports_kit.webp';
 
 // package
-import pack from './img/products/package (1).png';
-import pack2 from './img/products/package (2).png';
-import pack3 from './img/products/package (3).png';
-import pack4 from './img/products/package (4).png';
+import pack from './img/products/package (1).webp';
+import pack2 from './img/products/package (2).webp';
+import pack3 from './img/products/package (3).webp';
+import pack4 from './img/products/package (4).webp';
 
 // icons
 import location from './img/location-org.png';
@@ -98,29 +98,6 @@ export const linkBar = [
         id: 5,
         name: "Contact Us",
         href: "contact",
-    },
-];
-
-export const loginOptions = [
-    {
-        id: 1,
-        name: "Login with Google",
-        icon: ""
-    },
-    {
-        id: 2,
-        name: "Login with Apple",
-        icon: ""
-    },
-    {
-        id: 3,
-        name: "Login with Facebook",
-        icon: ""
-    },
-    {
-        id: 4,
-        name: "Login with Phone",
-        icon: ""
     },
 ];
 
@@ -244,6 +221,14 @@ export const productsData = [
         image: [watch3],
         features: []
     },
+    {
+        id: 12,
+        name: "Energy Soda",
+        price: "11.99",
+        tag: "Feel the energy inside",
+        image: [soda],
+        features: []
+    },
 ];
 
 export const sectionData = [
@@ -317,6 +302,7 @@ export const categories = [
     },
 ];
 
+// Product model
 export const product = {
     name: "Smart Watch",
     price: 11.99,

@@ -1,16 +1,15 @@
 import './Product.scss';
-import { useState } from 'react';
-import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import { useState, useEffect } from 'react';
 import plus from '../../img/plus.png';
 import minus from '../../img/minus.png';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import Feature from '../../components/Feature/Feature';
 import Buystrip from '../../components/Buystrip/Buystrip';
-import { useEffect } from 'react';
 import Gallery from '../../components/Gallery/Gallery';
 import Modal from '../../components/Modal/Modal';
-import { product } from '../../staticData';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
+import { product } from '../../staticData';
 
 const Product = () => {
   const [ quantity, setQuantity ] = useState(1);

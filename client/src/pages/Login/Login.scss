@@ -8,13 +8,13 @@
     height: 100vh;
 
     @include tab {
-        height: calc(100vh - 60px);
+        height: 100vh;
     }
 
     .loginWrapper {
         background-color: var(--white);
         border-radius: 5px;
-        width: 500px;
+        width: 600px;
 
         @include mobile {
             width: 100%;

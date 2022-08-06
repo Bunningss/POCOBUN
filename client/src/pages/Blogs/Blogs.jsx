@@ -1,6 +1,6 @@
-import Article from '../../components/Article/Article';
 import './Blogs.scss';
 import { blogs } from '../../staticData';
+import Article from '../../components/Article/Article';
 import HeaderGroup from "../../components/HeaderGroup/HeaderGroup";
 
 const Blogs = () => {

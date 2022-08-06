@@ -2,9 +2,6 @@
 
             .feature {
                 width: 60%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 margin: 10px 0;
                 padding: 20px;
                 border-radius: 5px;
@@ -14,14 +11,8 @@
                     width: 100%;
                 }
 
-                p {
-                    font-size: 18px;
-                    font-weight: 500;
+                .title {
+                    font-weight: 600;
                     text-transform: capitalize;
-
-                    span {
-                        font-size: 20px;
-                        font-weight: 600;
-                    }
                 }
             }

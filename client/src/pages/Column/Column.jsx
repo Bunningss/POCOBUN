@@ -1,8 +1,8 @@
 import './Column.scss';
-import arrow from '../../img/backArrow.png';
-import { Link } from 'react-router-dom';
-import demo from '../../img/Blogs/blog (1)-1.webp';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import arrow from '../../img/backArrow.png';
+import demo from '../../img/Blogs/blog (1)-1.webp';
 
 const Column = () => {
 

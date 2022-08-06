@@ -4,7 +4,7 @@ import HeaderGroup from '../HeaderGroup/HeaderGroup';
 
 const Section = ({smHeader, header, section }) => {
   return (
-    // Displays 5 products
+    // Section displays 5 products
     <div className="section">
       {
         smHeader && 

@@ -19,6 +19,7 @@ const Card = ({ item }) => {
         </div>
       </Link>
       <Heart/>
+      <h6 className="review"><span>4.6</span>/5</h6>
     </div>
   )
 }

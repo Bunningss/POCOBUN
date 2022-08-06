@@ -1,8 +1,8 @@
 import './LargeCard.scss';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import Backdrop from '../Backdrop/Backdrop';
-import { useState } from 'react';
 
 const LargeCard = ({ pack }) => {
     const [ vis, setVis ] = useState(false);
