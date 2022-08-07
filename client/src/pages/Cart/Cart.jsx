@@ -1,6 +1,7 @@
 import './Cart.scss';
 import CartItem from '../../components/CartItem/CartItem';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import TitleGroup from '../../components/TitleGroup/TitleGroup';
 
 const Cart = () => {
   const handleClick = () => {
@@ -13,14 +14,15 @@ const Cart = () => {
   
   return (
       <div className='cart default defaultPadding'>
-          <h2 className="header">Review your bag.</h2>
-          <h4 className="title">Free delivery and free returns.</h4>
+        <TitleGroup header={"Review your bag"} title={"Free delivery and free returns."}/>
           <CartItem handleClick={handleClick}/>
           <CartItem handleClick={handleClick}/>
           <CartItem handleClick={handleClick}/>
           <CartItem handleClick={handleClick}/>
           <CartItem handleClick={handleClick}/>
-          <PrimaryButton text={"Proceed to checkout"} onClick={handleCheckout}/>
+          <div className="checkout">
+            <PrimaryButton text={"Proceed to checkout"} onClick={handleCheckout}/>
+          </div>
       </div>
   )
 }

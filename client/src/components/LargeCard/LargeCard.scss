@@ -81,18 +81,4 @@
             }
         }
     }
-
-    .primaryBtn {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        min-width: 200px;
-        display: none;
-
-        @include mobile {
-            min-width: 120px;
-            bottom: 5px;
-            right: 5px;
-        }
-    }
 }

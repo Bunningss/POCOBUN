@@ -11,7 +11,7 @@ const Rating = ({rating}) => {
   return (
     <div className='rate'>
         <h6 className='rating'><span>{rating}</span>/5</h6>
-        <div className="review">
+        <div className="rev">
             <HeaderGroup smHeader={"Leave a review"} header={"Rate this product"}/>
             <div className="reviewGroup">
                 {

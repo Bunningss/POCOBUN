@@ -1,7 +1,6 @@
 import './LargeCard.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import Backdrop from '../Backdrop/Backdrop';
 
 const LargeCard = ({ pack }) => {
@@ -26,7 +25,6 @@ const LargeCard = ({ pack }) => {
                     </div>
                 </div>
             </div>
-            <PrimaryButton text={"what's in the pack"}/>
             <Backdrop vis={vis}/>
         </div>
     </Link>

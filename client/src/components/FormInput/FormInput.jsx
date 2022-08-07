@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const FormInput = ( props ) => {
   const [ focused, setFocused ] = useState(false);
-  const { id, onChange, inputRef, errorMsg, ...others } = props;
+  const { label, id, onChange, inputRef, errorMsg, ...others } = props;
 
   const handleFocus = () => {
     setFocused(true)
@@ -11,6 +11,7 @@ const FormInput = ( props ) => {
 
   return (
     <div>
+      <label className='inputLabel text'>{label}</label>
       <input ref={inputRef} className='formInput' {...others} onChange={onChange} onBlur={handleFocus} focused={focused.toString()}/>
       <span className='error'>{errorMsg}</span>
     </div>

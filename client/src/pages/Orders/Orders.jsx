@@ -2,6 +2,7 @@ import './Orders.scss';
 import { Link } from 'react-router-dom';
 import Order from '../../components/Order/Order';
 import arrow from '../../img/arrow.png';
+import TitleGroup from '../../components/TitleGroup/TitleGroup';
 
 const Orders = () => {
   return (
@@ -11,8 +12,7 @@ const Orders = () => {
           <h6 className='accountLink'>Account Settings</h6>
           <img src={arrow} alt="" className="icon" />
         </Link>
-        <h2 className="header">Products you've ordered.</h2>
-        <h4 className="title">Only purchases from the last 18 months will be shown here.</h4>
+        <TitleGroup header={"Products you've ordered"} title={"Products purchased in the last 18 months will be shown here."}/>
         <div className="ordersContent">
           <Order />
           <Order />

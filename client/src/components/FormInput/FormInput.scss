@@ -24,6 +24,15 @@
     }
 }
 
+.inputLabel {
+    display: inline-block;
+    margin: 20px 0 5px 0;
+
+    @include mobile {
+        margin: 15px 0 5px 0;
+    }
+}
+
 .error {
     font-size: 14px;
     font-weight: 500;

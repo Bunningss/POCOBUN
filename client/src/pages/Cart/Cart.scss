@@ -2,33 +2,14 @@
 
 .cart {
 
-    .header {
-        font-size: 40px;
-        font-weight: 600;
-        margin: 15px 0;
+    .checkout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0 20px 0;
 
         @include mobile {
-            font-size: 28px;
+            margin: 40px 0 20px 0;
         }
     }
-
-    .title {
-        margin-bottom: 20px;
-    }
-
-    .sectionHeader {
-        font-size: 28px;
-        font-weight: 500;
-        margin: 0 0 25px 0;
-
-        @include mobile {
-            font-size: 20px;
-        }
-    }
-}
-
-.emptyCart {
-    font-size: 30px;
-    text-align: center;
-    margin: 100px 0;
 }

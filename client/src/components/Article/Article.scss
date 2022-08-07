@@ -54,13 +54,11 @@
         }
 
         .articleInfo {
-            height: 20%;
 
             .subheader {
                 width: fit-content;
                 position: relative;
-                margin: 5px 0;
-                padding-bottom: 2px;
+                line-height: 1.8;
             }
         }
     }

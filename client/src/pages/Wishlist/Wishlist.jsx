@@ -1,5 +1,5 @@
 import './Wishlist.scss';
-import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
+import TitleGroup from '../../components/TitleGroup/TitleGroup';
 import CartItem from '../../components/CartItem/CartItem';
 
 const Wishlist = () => {
@@ -9,8 +9,7 @@ const Wishlist = () => {
   return (
     <div className='wishlist default defaultPadding'>
         <div className="wishlistWrapper">
-          <h2 className="header">Favourite Items</h2>
-          <h4 className="title">Items that you love.</h4>
+          <TitleGroup header={"Favourite items"} title={"Items that you love."}/>
             <CartItem handleClick={handleClick}/>
             <CartItem handleClick={handleClick}/>
             <CartItem handleClick={handleClick}/>

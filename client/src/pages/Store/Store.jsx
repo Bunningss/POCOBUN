@@ -5,6 +5,7 @@ import { categories, productsData, sectionData } from '../../staticData';
 import Category from '../../components/Category/Category';
 import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
+import SearchBar from '../../components/SearchBar/SearchBar';
 
 const Store = () => {
     const cat = useLocation().search
@@ -21,6 +22,7 @@ const Store = () => {
 
   return (
     <div className='store default'>
+        <SearchBar/>
         <div className="categories">
             <h2 className="header">Categories. <span>Browse through your favourite items.</span></h2>
             <div className="categoryContainer">

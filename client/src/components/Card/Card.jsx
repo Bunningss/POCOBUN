@@ -1,6 +1,7 @@
+import './Card.scss';
 import { Link } from 'react-router-dom';
 import Heart from '../Heart/Heart';
-import './Card.scss';
+import Review from '../Review/Review';
 
 const Card = ({ item }) => {
   return (
@@ -19,7 +20,7 @@ const Card = ({ item }) => {
         </div>
       </Link>
       <Heart/>
-      <h6 className="review"><span>4.6</span>/5</h6>
+      <Review/>
     </div>
   )
 }
