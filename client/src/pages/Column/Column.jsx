@@ -2,7 +2,7 @@ import './Column.scss';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import arrow from '../../img/backArrow.png';
-import demo from '../../img/Blogs/blog (1)-1.webp';
+import demo from '../../img/Blogs/blog (1).webp';
 
 const Column = () => {
 

@@ -1,6 +1,7 @@
 import './Wishlist.scss';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
 import CartItem from '../../components/CartItem/CartItem';
+import { cartData } from '../../staticData';
 
 const Wishlist = () => {
     const handleClick = () => {
@@ -10,11 +11,11 @@ const Wishlist = () => {
     <div className='wishlist default defaultPadding'>
         <div className="wishlistWrapper">
           <TitleGroup header={"Favourite items"} title={"Items that you love."}/>
-            <CartItem handleClick={handleClick}/>
-            <CartItem handleClick={handleClick}/>
-            <CartItem handleClick={handleClick}/>
-            <CartItem handleClick={handleClick}/>
-            <CartItem handleClick={handleClick}/>
+          {
+            cartData.map((data) => (
+              <CartItem handleClick={handleClick} item={data}/>
+            ))
+          }
         </div>
     </div>
   )

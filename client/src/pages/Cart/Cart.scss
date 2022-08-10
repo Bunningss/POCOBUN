@@ -2,6 +2,18 @@
 
 .cart {
 
+    .cartTotal {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+
+        .title {
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+
     .checkout {
         display: flex;
         justify-content: center;

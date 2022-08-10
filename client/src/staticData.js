@@ -40,8 +40,14 @@ import clock from './img/clock-org.png';
 import phone from './img/phone-org.png';
 
 //blogs
-import blog1 from './img/Blogs/blog (1)-1.webp';
+import blog1 from './img/Blogs/blog (1).webp';
 import blog2 from './img/Blogs/blog (2).webp';
+import blog3 from './img/Blogs/blog (3).webp';
+import blog4 from './img/Blogs/blog (4).webp';
+import blog5 from './img/Blogs/blog (5).webp';
+import blog6 from './img/Blogs/blog (6).webp';
+import blog7 from './img/Blogs/blog (7).webp';
+import blog8 from './img/Blogs/blog (8).webp';
 
 export const sliderData = [slider1, slider3, slider2, slider4]
 
@@ -455,50 +461,83 @@ export const blogs = [
     {
         id: 1,
         title: "What i am loving RN",
-        date: "22 July 2022",
+        date: "02 April 2022",
         img: blog1
     },
     {
         id: 2,
         title: "Summer Blues",
-        date: "22 July 2022",
+        date: "10 april 2022",
         img: blog2
     },
     {
         id: 3,
         title: "Atlantic - Pacific",
-        date: "22 July 2022",
-        img: blog1
+        date: "16 april 2022",
+        img: blog3
     },
     {
         id: 4,
-        title: "What i am loving RN",
-        date: "22 July 2022",
-        img: blog2
+        title: "Fashion trends",
+        date: "22 april 2022",
+        img: blog4
     },
     {
         id: 5,
-        title: "What i am loving RN",
-        date: "22 July 2022",
-        img: blog1
+        title: "Summer trends now",
+        date: "28 april 2022",
+        img: blog5
     },
     {
         id: 6,
-        title: "What i am loving RN",
-        date: "22 July 2022",
-        img: blog2
+        title: "Fashion items this year",
+        date: "13 July 2022",
+        img: blog6
     },
     {
         id: 7,
-        title: "What i am loving RN",
+        title: "new look new feel",
         date: "22 July 2022",
-        img: blog1
+        img: blog7
     },
     {
         id: 8,
-        title: "What i am loving RN",
-        date: "22 July 2022",
-        img: blog2
+        title: "designer collection 2022",
+        date: "30 July 2022",
+        img: blog8
+    },
+];
+
+export const cartData = [
+    {
+        img: soda,
+        price: 9.99,
+        name: "energy Soda",
+        quantity: 5,
+    },
+    {
+        img: heeled_shoe,
+        price: 19.99,
+        name: "Heeled Shoe",
+        quantity: 4,
+    },
+    {
+        img: watch,
+        price: 2.99,
+        name: "Smart watch",
+        quantity: 5,
+    },
+    {
+        img: leather_shoe,
+        price: 29.99,
+        name: "Leather Shoe",
+        quantity: 9,
+    },
+    {
+        img: sports_kit,
+        price: 10.99,
+        name: "Sports Kit",
+        quantity: 1,
     },
 ];
 // functions
