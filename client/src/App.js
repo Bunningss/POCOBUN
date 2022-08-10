@@ -17,6 +17,7 @@ import Column from './pages/Column/Column';
 import Contact from './pages/Contact/Contact';
 import OurStory from './pages/OurStory/OurStory';
 import Wishlist from './pages/Wishlist/Wishlist';
+import Search from './pages/Search/Search';
 
 // components
 import Navbar from './components/Navbar/Navbar';
@@ -50,6 +51,7 @@ function App() {
         <Route exact path='/blog/:id' element={<Column/>}/>
         <Route exact path='/story' element={<OurStory/>}/>
         <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/search/:query' element={<Search/>}/>
       </Routes>
       <Newsletter/>
       <Disclaimer/>

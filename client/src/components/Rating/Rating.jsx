@@ -1,5 +1,5 @@
-import Review from '../Rate/Rate';
 import './Rating.scss';
+import Review from '../Rate/Rate';
 import HeaderGroup from '../HeaderGroup/HeaderGroup';
 
 const reviewNum = [1,2,3,4,5]

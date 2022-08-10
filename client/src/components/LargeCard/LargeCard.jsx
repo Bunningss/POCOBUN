@@ -5,7 +5,7 @@ import Backdrop from '../Backdrop/Backdrop';
 
 const LargeCard = ({ pack }) => {
     const [ vis, setVis ] = useState(false);
-    const { details, name, image, price, id } = pack;
+    const { details, name, image, price, id } = pack; // details should be an array. Map details inside "productDetails" div.
   return (
     <Link className='largeCardLink' to="/product/hjdfdhuf" onMouseEnter={() => setVis(true)} onMouseLeave={() => setVis(false)}>
         <div className='largeCard'>

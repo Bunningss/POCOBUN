@@ -1,6 +1,6 @@
+import './NavHover.scss';
 import { Link } from 'react-router-dom';
 import NumberWidget from '../NumberWidget/NumberWidget';
-import './NavHover.scss';
 
 const NavHover = ({ visible }) => {
   return (

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import FormInput from '../../components/FormInput/FormInput';
 import Terms from '../../components/Terms/Terms';
+import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -57,19 +58,14 @@ const Register = () => {
   }
 
   const handleRegister = async (e) => {
-    e.preventDefault();
-    try {
-      await publicRequest.post("/auth/register", values)
-      navigate("/login")
-    } catch (err) {
-      setError(err.response.data.msg)
-    }
+    // registration backend logic
+    // if registration successful, navigate to login page.
   }
 
   return (
     <div className='register default defaultPadding'>
         <div className="wrapper">
-            <h2 className="header">Sign up to POCOBUN</h2>
+            <HeaderGroup smHeader={"Sign up"} header={"Create a pocobun account"}/>
             <form action="" className="registerForm">
               {
                 inputs.map((input) => (

@@ -1,5 +1,5 @@
-import DropdownItem from '../DropdownItem/DropdownItem';
 import './Dropdown.scss';
+import DropdownItem from '../DropdownItem/DropdownItem';
 
 const Dropdown = ({ details }) => {
   return (

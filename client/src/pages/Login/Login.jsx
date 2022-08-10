@@ -1,17 +1,16 @@
 import './Login.scss';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import FormInput from '../../components/FormInput/FormInput';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const Login = () => {
-  const emailRef = useRef();
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
   const [ error, setError ] = useState("");
   const [ user, setUser ] = useState(false);
 
-  const emailInput = [
-    {
+  const emailInput = {
       id: 1,
       name: "email",
       errorMsg: "Enter a valid email address",
@@ -19,17 +18,14 @@ const Login = () => {
       type: 'email',
       required: true
     }
-  ];
-  const passInput = [
-    {
-      id: 1,
+  const passInput = {
+      id: 2,
       name: "password",
       errorMsg: "Enter your password",
       placeholder: "Enter Password",
       type: 'password',
       required: true
     }
-  ];
 
   const handleStart = async (e) => {
     e.preventDefault();
@@ -38,8 +34,10 @@ const Login = () => {
 
   const handleFinish = async (e) => {
     e.preventDefault();
+    // backend logic to login user
   }
 
+//updating input values
   const emailChange = (e) => {
     setEmail(e.target.value)
   }
@@ -49,26 +47,22 @@ const Login = () => {
   return (
     <div className='login default defaultPadding'>
       <div className="loginWrapper">
-        <h2 className="header">Welcome to POCOBUN</h2>
+        <HeaderGroup smHeader={"Login"} header={"Sign into your account"}/>
         { !user ?
             <form action="" className="loginForm">
               {
-                emailInput.map((input) => (
-                  <FormInput {...input} key={input.id} inputRef={emailRef} onChange={emailChange}/>
-                ))
+                  <FormInput {...emailInput} onChange={emailChange}/>
               }
               <PrimaryButton text={"Continue"} onClick={handleStart}/>
             </form> :
             <form action="" className="loginForm">
               {
-                passInput.map((input) => (
-                  <FormInput {...input} key={input.id} onChange={passChange}/>
-                ))
+                  <FormInput {...passInput} onChange={passChange}/>
+              }
+              {
+                error && <p className='redLight'>{error}</p>
               }
               <PrimaryButton text={"Continue"} onClick={handleFinish}/>
-              {
-                error ? <p className='redLight'>{error}</p> : null
-              }
             </form>
         }
       </div>

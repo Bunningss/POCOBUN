@@ -1,18 +1,31 @@
 import './Account.scss';
+import { useState } from 'react';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
 import FormInput from '../../components/FormInput/FormInput';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 
 const Account = () => {
-  let username = "John Doe" // In a real application we fetch username from database.
-  const accountInfo = [
+  const [ values, setValues ] = useState({
+    name: "",
+    email: "",
+    password: ""
+  })
+  const [ error, setError ] = useState("");
+  const [ response, setResponse ] = useState("")
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value })
+  }
+
+  let username = "John Doe" // In a complete application we fetch username from database.
+  let email = "john@gmail.com" // In a complete application we fetch email from database.
+  const inputs = [
     {
       id: 1,
       label: "Name",
       inputs: {
-        name: "Name",
+        name: "name",
         type: "text",
         placeholder: username,
-        required: true,
         minLength: 5,
         errorMsg: "Enter a proper name"
       }
@@ -21,39 +34,48 @@ const Account = () => {
       id: 2,
       label: "Email",
       inputs: {
-        name: "Name",
-        type: "text",
-        placeholder: username,
-        required: true,
+        name: "email",
+        type: "email",
+        placeholder: email,
         minLength: 5,
-        errorMsg: "Enter a proper name"
+        errorMsg: "Enter a proper email"
       }
     },
     {
       id: 3,
       label: "Password",
       inputs: {
-        name: "Name",
-        type: "text",
-        placeholder: username,
-        required: true,
-        minLength: 5,
-        errorMsg: "Enter a proper name"
+        name: "password",
+        type: "password",
+        placeholder: "********",
+        minLength: 8,
+        errorMsg: "Enter a proper password"
       }
     },
   ];
+
+  const handleClick = async (e) => {
+    // updating info backend logic
+  }
   return (
     <div className='account default defaultPadding'>
       <div className="accountTitle">
         <TitleGroup header={"Hi, John."} title={"Account Settings."}/>
       </div>
-      <div className="accountContent">
+      <form className="accountContent">
         {
-          accountInfo.map((info, index) => (
-            <FormInput {...info.inputs} label={info.label} key={index}/>
+          inputs.map((input, index) => (
+            <FormInput {...input.inputs} label={input.label} key={index} value={values[input.name]} onChange={onChange}/>
           ))
         }
-      </div>
+        {
+          error && <p className="redLight">Error Message</p>
+        }
+        {
+          response && <p className="greenLight">Success Message</p>
+        }
+        <PrimaryButton text={"update"} onClick={handleClick}/>
+      </form>
     </div>
   )
 }

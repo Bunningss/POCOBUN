@@ -1,6 +1,6 @@
+import './Details.scss';
 import HeaderGroup from '../HeaderGroup/HeaderGroup';
 import Rating from '../Rating/Rating';
-import './Details.scss';
 
 const Details = ({ c }) => {
   return (

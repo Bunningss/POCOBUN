@@ -1,7 +1,7 @@
+import './ImportantLiknks.scss';
 import { addressGroup, importantLinks } from '../../staticData';
 import AddressGroup from '../AddressGroup/AddressGroup';
 import Link from '../Link/Link';
-import './ImportantLiknks.scss';
 
 const ImportantLiknks = () => {
   return (

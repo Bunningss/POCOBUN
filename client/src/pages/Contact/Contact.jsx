@@ -1,4 +1,5 @@
 import './Contact.scss';
+import { useState } from 'react';
 import location from '../../img/location.png';
 import phone from '../../img/phone.png';
 import mail from '../../img/mail.png';
@@ -10,6 +11,8 @@ import FormInput from '../../components/FormInput/FormInput';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 
 const Contact = () => {
+  const [ error, setError ] = useState("");
+  const [ response, setResponse ] = useState("");
   const inputs = [
     {
       id: 1,
@@ -72,6 +75,12 @@ const Contact = () => {
                     }
                   </div>
                   <textarea placeholder='Message' required></textarea>
+                  {
+                    error && <p className="redLight">Error Message</p>
+                  }
+                  {
+                    response && <p className="greenLight">Success Message</p>
+                  }
                   <PrimaryButton text={"Send Message"} onClick={sendMessage}/>
                 </form>
               </div>

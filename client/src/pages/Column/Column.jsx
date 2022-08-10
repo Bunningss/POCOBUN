@@ -15,7 +15,7 @@ const Column = () => {
     <div className='column default defaultPadding'>
         <div className="columnWrapper">
             <Link to='/blog'>
-                <img className='arrow' src={arrow} alt="" />
+                <img className='arrow' src={arrow} alt="return arrow" />
             </Link>
             <h2 className="header">Why there is no SPF in our day cream</h2>
             <img src={demo} alt="" className="columnImg" />
