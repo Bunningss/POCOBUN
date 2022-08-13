@@ -6,6 +6,7 @@ import Category from '../../components/Category/Category';
 import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
 import SearchBar from '../../components/SearchBar/SearchBar';
+import { scrollToTop } from '../../staticData';
 
 const Store = () => {
     const cat = useLocation().search
