@@ -16,6 +16,8 @@ const Store = () => {
             store.current.scrollIntoView({
                 behavior: "smooth"
             })
+        } else {
+            window.scrollTo(0,0)
         }
     }, [cat]);
 
@@ -36,7 +38,7 @@ const Store = () => {
         <h2 className="header">the latest. <span>take a look at whats new, right now!</span></h2>
             <Section section={sectionData}/>
         <h2 className="header">Store. <span>the best way to buy products you love.</span></h2>
-        <div ref={store} className="storeWrapper"> {/* Loads products according to category. If no category, load all products*/}
+        <div ref={store} className="storeWrapper defaultPadding"> {/* Loads products according to category. If no category, load all products*/}
             {
                 productsData.map((item) => (
                     <Card key={item.id} item={item}/>

@@ -1,12 +1,17 @@
 @import '../../global.scss';
 
 .nav {
-    background-color: rgba(0,0,0,0.92);
+    // background-color: rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,.6);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 45px;
     user-select: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
 
     .navContainer {
         max-width: 1024px;
@@ -41,6 +46,14 @@
             @include mobile {
                 display: none;
             }
+
+            .listItem {
+                color: var(--fontColor);
+
+                &:hover {
+                    color: var(--accentColor);
+                }
+            }
         }
 
         .bagWrapper {
@@ -57,7 +70,11 @@
             }
             
             .bag {
-                width: 25px;
+                width: 40px;
+
+                @include mobile {
+                    width: 35px;
+                }
             }
         }
     }

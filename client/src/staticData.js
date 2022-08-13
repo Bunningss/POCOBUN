@@ -1,11 +1,17 @@
 import { useEffect, useState } from 'react';
-// banner slider
-import slider2 from './img/sliderBanner/makeup1.webp';
-import slider1 from './img/sliderBanner/makeup.webp';
-import slider3 from './img/sliderBanner/chocolate.webp';
-import slider4 from './img/sliderBanner/gadget.webp';
-import banner1 from './img/sliderBanner/shoe collection.webp';
-import banner2 from './img/sliderBanner/SPORTSWEAR.webp';
+// slider
+import slider2 from './img/sliderBanner/orange-girl.webp';
+import slider1 from './img/sliderBanner/modelTwo.webp';
+import slider3 from './img/sliderBanner/modelThree.webp';
+import slider4 from './img/sliderBanner/modelFour.webp';
+import slider5 from './img/sliderBanner/modelFive.webp';
+
+//grid images
+import grid from './img/Grid/g1.webp';
+import grid2 from './img/Grid/g2.webp';
+import grid3 from './img/Grid/g3.webp';
+import grid4 from './img/Grid/g4.webp';
+import grid5 from './img/Grid/g5.webp';
 
 // categories
 import health from './img/health.png';
@@ -49,18 +55,38 @@ import blog6 from './img/Blogs/blog (6).webp';
 import blog7 from './img/Blogs/blog (7).webp';
 import blog8 from './img/Blogs/blog (8).webp';
 
-export const sliderData = [slider1, slider3, slider2, slider4]
+export const sliderData = [slider1,slider2, slider3,slider4,slider5];
 
-export const bannerData = [
+export const gridData = [
     {
-        id: 1,
-        img: banner1,
-        href: "/store?category=fashion"
+        href: "/store",
+        tagline: 'outwear',
+        text: 'new collection',
+        img: grid
     },
     {
-        id: 2,
-        img: banner2,
-        href: "/store?category=s&o"
+        href: "/store",
+        tagline: 'summer',
+        text: 'hot collection',
+        img: grid2
+    },
+    {
+        href: "/store",
+        tagline: 'trending',
+        text: 'new products',
+        img: grid3
+    },
+    {
+        href: "/store",
+        tagline: 'hot',
+        text: 'current collection',
+        img: grid4
+    },
+    {
+        href: "/store",
+        tagline: 'sale',
+        text: 'browse all collection',
+        img: grid5
     },
 ];
 
@@ -540,6 +566,26 @@ export const cartData = [
         quantity: 1,
     },
 ];
+
+export const sliderTexts = [
+    {
+        smHeader: "new collection",
+        Header: "summer offer\n2022 collection",
+    },
+    {
+        smHeader: "new collection",
+        Header: "summer offer\n2022 collection",
+    },
+    {
+        smHeader: "now collection",
+        Header: "summer offer\n2022 collection",
+    },
+    {
+        smHeader: "new collection",
+        Header: "summer offer\n2022 collection",
+    },
+];
+
 // functions
 export const useWindowScrollPositions = () => {
 const [scrollPosition, setPosition] = useState({ scrollX: 0, scrollY: 0 })
@@ -557,32 +603,3 @@ useEffect(() => {
 
 return scrollPosition
 }
-
-// Width of an element
-
-export const useContainerDimensions = myRef => {
-  const getDimensions = () => ({
-    width: myRef.current.clientWidth,
-    height: myRef.current.offsetHeight
-  })
-
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-
-  useEffect(() => {
-    const handleResize = () => {
-      setDimensions(getDimensions())
-    }
-
-    if (myRef.current) {
-      setDimensions(getDimensions())
-    }
-
-    window.addEventListener("resize", handleResize)
-
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [myRef])
-
-  return dimensions;
-};
