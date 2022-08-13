@@ -5,8 +5,10 @@ import Section from '../../components/Section/Section';
 import LargeCard from '../../components/LargeCard/LargeCard';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 import Grid from '../../components/Grid/Grid';
+import { scrollToTop } from '../../staticData';
 
 const Home = () => {
+  scrollToTop();
 // **Section displays maximum 5 products
   return (
     <div className='home default'>

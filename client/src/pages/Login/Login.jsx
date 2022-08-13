@@ -3,8 +3,10 @@ import { useState } from 'react';
 import FormInput from '../../components/FormInput/FormInput';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
+import { scrollToTop } from '../../staticData';
 
 const Login = () => {
+  scrollToTop();
   const [ email, setEmail ] = useState("");
   const [ password, setPassword ] = useState("");
   const [ error, setError ] = useState("");

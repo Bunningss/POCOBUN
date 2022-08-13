@@ -9,8 +9,10 @@ import twitter from '../../img/twitter.png';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import FormInput from '../../components/FormInput/FormInput';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
+import { scrollToTop } from '../../staticData';
 
 const Contact = () => {
+  scrollToTop();
   const [ error, setError ] = useState("");
   const [ response, setResponse ] = useState("");
   const inputs = [

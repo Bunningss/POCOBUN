@@ -2,8 +2,10 @@ import './Wishlist.scss';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
 import CartItem from '../../components/CartItem/CartItem';
 import { cartData } from '../../staticData';
+import { scrollToTop } from '../../staticData';
 
 const Wishlist = () => {
+  scrollToTop();
     const handleClick = () => {
         // logic to remove from wishlist
     }

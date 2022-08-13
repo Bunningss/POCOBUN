@@ -2,8 +2,10 @@ import './Blogs.scss';
 import { blogs } from '../../staticData';
 import Article from '../../components/Article/Article';
 import HeaderGroup from "../../components/HeaderGroup/HeaderGroup";
+import { scrollToTop } from '../../staticData';
 
 const Blogs = () => {
+  scrollToTop()
   return (
     <div className='blogs default defaultPadding'>
         <div className="blogsTop">

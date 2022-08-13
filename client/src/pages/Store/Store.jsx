@@ -17,7 +17,7 @@ const Store = () => {
                 behavior: "smooth"
             })
         } else {
-            window.scrollTo(0,0)
+            scrollToTop();
         }
     }, [cat]);
 

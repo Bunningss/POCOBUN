@@ -603,3 +603,9 @@ useEffect(() => {
 
 return scrollPosition
 }
+// scroll to top
+export const scrollToTop = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
+}

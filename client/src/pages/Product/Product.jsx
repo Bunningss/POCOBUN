@@ -1,5 +1,5 @@
 import './Product.scss';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import plus from '../../img/plus.png';
 import minus from '../../img/minus.png';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
@@ -12,12 +12,9 @@ import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
 import { product } from '../../staticData';
 
 const Product = () => {
+  scrollToTop();
   const [ quantity, setQuantity ] = useState(1);
   const [ modalImg, setModalImg ] = useState('');
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, []);
 
   const handleQuantity = (type) => {
     if (type === "dec") {

@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import arrow from '../../img/backArrow.png';
 import demo from '../../img/Blogs/blog (1).webp';
+import { scrollToTop } from '../../staticData';
 
 const Column = () => {
-
+scrollToTop();
 // always load on top of page
   useEffect(() => {
     window.scrollTo(0,0)

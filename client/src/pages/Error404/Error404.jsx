@@ -1,10 +1,8 @@
 import './Error404.scss';
-import { useEffect } from 'react';
+import { scrollToTop } from '../../staticData';
 
 const Error404 = () => {
-  useEffect(() => {
-    window.scrollTo(0,0)
-  })
+  scrollToTop();
   return (
     <div className='err404 default'>
       <h2>404!</h2>

@@ -3,8 +3,10 @@ import { cartData } from '../../staticData';
 import CartItem from '../../components/CartItem/CartItem';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
+import { scrollToTop } from '../../staticData';
 
 const Cart = () => {
+  scrollToTop();
   const handleClick = () => {
     // logic to remove from cart
   }

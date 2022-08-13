@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import Order from '../../components/Order/Order';
 import arrow from '../../img/arrow.png';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
+import { scrollToTop } from '../../staticData';
 
 const Orders = () => {
+  scrollToTop();
   return (
     <div className='orders default defaultPadding'>
       <div className="ordersWrapper">

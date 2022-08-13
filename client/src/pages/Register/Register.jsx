@@ -5,8 +5,10 @@ import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import FormInput from '../../components/FormInput/FormInput';
 import Terms from '../../components/Terms/Terms';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
+import { scrollToTop } from '../../staticData';
 
 const Register = () => {
+  scrollToTop();
   const navigate = useNavigate();
   const [ error, setError ] = useState("");
   const [ values, setValues ] = useState({

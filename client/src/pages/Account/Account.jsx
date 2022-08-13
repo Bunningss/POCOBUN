@@ -3,8 +3,10 @@ import { useState } from 'react';
 import TitleGroup from '../../components/TitleGroup/TitleGroup';
 import FormInput from '../../components/FormInput/FormInput';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import { scrollToTop } from '../../staticData';
 
 const Account = () => {
+  scrollToTop();
   const [ values, setValues ] = useState({
     name: "",
     email: "",
