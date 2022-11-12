@@ -9,7 +9,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Modal from '../../components/Modal/Modal';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import HeaderGroup from '../../components/HeaderGroup/HeaderGroup';
-import { product } from '../../staticData';
+import { product, scrollToTop } from '../../staticData';
 
 const Product = () => {
   scrollToTop();

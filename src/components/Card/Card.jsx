@@ -6,7 +6,7 @@ import Review from '../Review/Review';
 const Card = ({ item }) => {
   return (
     <div className="card">
-      <Link to={`/product/${item?._id}`}>
+      <Link to={`/product/${item?.id}`}>
         <div className="wrapper">
           <div className="textZone">
             <p className='text'>{item?.tag}</p>
