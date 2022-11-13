@@ -1,13 +1,12 @@
 .search {
+  .searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    .searchResults {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-        .card {
-            width: calc(100% / 7);
-        }
+    .card {
+      width: calc(100% / 7);
     }
+  }
 }

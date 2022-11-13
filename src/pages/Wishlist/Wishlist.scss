@@ -1,19 +1,17 @@
 .wishlist {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .wishlistWrapper {
-        width: 100%;
+  .wishlistWrapper {
+    width: 100%;
 
-        .cartItem {
-
-            .textZone {
-
-                .quantity {
-                    display: none;
-                }
-            }
+    .cartItem {
+      .textZone {
+        .quantity {
+          display: none;
         }
+      }
     }
+  }
 }

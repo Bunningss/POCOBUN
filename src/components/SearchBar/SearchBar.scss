@@ -1,68 +1,67 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .searchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+
+  @include tab {
+    height: 200px;
+  }
+
+  @include mobile {
+    height: 100px;
+  }
+
+  .searchWrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 100%;
+    width: 50%;
+    height: 50px;
 
     @include tab {
-        height: 200px;
+      width: 70%;
     }
 
     @include mobile {
-        height: 100px;
+      width: 100%;
     }
 
-    .searchWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 50px;
+    div {
+      width: 90%;
+      height: 100%;
 
-        @include tab {
-            width: 70%;
-        }
+      @include ipad {
+        width: 90%;
+      }
 
-        @include mobile {
-            width: 100%;
-        }
+      @include mobile {
+        width: 80%;
+      }
 
-        div {
-            width: 90%;
-            height: 100%;
-
-            @include ipad {
-                width: 90%;
-            }
-
-            @include mobile {
-                width: 80%;
-            }
-
-            .formInput {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                border-radius: 3% 0% 0% 3% / 66% 50% 52% 66%  ;
-            }
-        }
-
-        .primaryBtn {
-            height: 100%;
-            border-radius: 0% 15% 15% 0% / 46% 50% 52% 53%;
-
-            @include laptop {
-                min-width: 100px;
-            }
-
-            @include ipad {
-                min-width: 100px;
-            }
-        }
+      .formInput {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 3% 0% 0% 3% / 66% 50% 52% 66%;
+      }
     }
 
+    .primaryBtn {
+      height: 100%;
+      border-radius: 0% 15% 15% 0% / 46% 50% 52% 53%;
+
+      @include laptop {
+        min-width: 100px;
+      }
+
+      @include ipad {
+        min-width: 100px;
+      }
+    }
+  }
 }

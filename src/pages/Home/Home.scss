@@ -1,25 +1,22 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .home {
+  .headerTitle {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+    font-weight: 500;
+  }
 
-    .headerTitle {
-        text-align: center;
-        margin: 30px 0;
-        font-size: 28px;
-        font-weight: 500;
+  .pastaPacks {
+    .pastaPackWrapper {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @include laptop {
+      }
     }
-
-    .pastaPacks {
-
-        .pastaPackWrapper {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-
-            @include laptop {
-                
-            }
-        }
-    }
+  }
 }

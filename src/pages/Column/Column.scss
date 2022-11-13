@@ -1,32 +1,32 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    .columnWrapper {
-        max-width: 1024px;
-        width: 100%;
+  .columnWrapper {
+    max-width: 1024px;
+    width: 100%;
 
-        .columnImg {
-            max-width: 450px;
-            max-height: 610px;
-            width: 100%;
-        }
-
-        .header {
-            margin: 20px 0;
-        }
-
-        .text {
-            font-weight: 400;
-            line-height: 2;
-
-            &.date {
-                margin-bottom: 50px;
-                margin-top: 30px;
-            }
-        }
+    .columnImg {
+      max-width: 450px;
+      max-height: 610px;
+      width: 100%;
     }
+
+    .header {
+      margin: 20px 0;
+    }
+
+    .text {
+      font-weight: 400;
+      line-height: 2;
+
+      &.date {
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+    }
+  }
 }

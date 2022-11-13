@@ -1,24 +1,19 @@
-import './Section.scss';
-import Card from '../Card/Card'
-import HeaderGroup from '../HeaderGroup/HeaderGroup';
+import "./Section.scss";
+import Card from "../Card/Card";
+import HeaderGroup from "../HeaderGroup/HeaderGroup";
 
-const Section = ({smHeader, header, section }) => {
+const Section = ({ smHeader, header, section }) => {
   return (
     // Section displays 5 products
     <div className="section">
-      {
-        smHeader && 
-        <HeaderGroup smHeader={smHeader} header={header}/>
-      }
-        <div className="cardContainer">
-          {
-            section?.map((item) => (
-              <Card key={item.id} item={item}/>
-            ))
-          }
-        </div>
+      {smHeader && <HeaderGroup smHeader={smHeader} header={header} />}
+      <div className="cardContainer">
+        {section?.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

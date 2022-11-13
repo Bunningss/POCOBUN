@@ -1,43 +1,43 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .formInput {
-    padding: 12px 15px;
-    border: 1px solid lightgray;
-    outline: none;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 5px 0 2px 0;
+  padding: 12px 15px;
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0 2px 0;
 
-    @include mobile {
-        padding: 10px 15px;
-        font-size: 16px;
-    }
+  @include mobile {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
 
-    &:invalid[focused="true"] ~ .error {
-        display: block;
-    }
+  &:invalid[focused="true"] ~ .error {
+    display: block;
+  }
 
-    &:invalid[focused="true"] {
-        border: 1px solid var(--accentColor);
-    }
+  &:invalid[focused="true"] {
+    border: 1px solid var(--accentColor);
+  }
 }
 
 .inputLabel {
-    display: inline-block;
-    margin: 20px 0 5px 0;
+  display: inline-block;
+  margin: 20px 0 5px 0;
 
-    @include mobile {
-        margin: 15px 0 5px 0;
-    }
+  @include mobile {
+    margin: 15px 0 5px 0;
+  }
 }
 
 .error {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--accentColor);
-    margin: 0 0 5px 0;
-    display: none;
-    text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accentColor);
+  margin: 0 0 5px 0;
+  display: none;
+  text-align: center;
 }

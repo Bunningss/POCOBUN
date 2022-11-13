@@ -1,50 +1,50 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .newsletter {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
 
-    .wrapper {
-        border-radius: 5px;
-        width: 60%;
+  .wrapper {
+    border-radius: 5px;
+    width: 60%;
 
-        @include laptop {
-            width: 100%;
-        }
+    @include laptop {
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .newsForm {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        width: 50%;
 
         @include mobile {
-            width: 100%;
+          width: 100%;
         }
 
-        .newsForm {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            div {
-                width: 50%;
-
-                @include mobile {
-                    width: 100%;
-                }
-
-                .formInput {
-                    width: 100%;
-                }
-            }
-
-            .primaryBtn {
-                width: 50%;
-
-                @include mobile {
-                    width: 100%;
-                }
-            }
+        .formInput {
+          width: 100%;
         }
+      }
+
+      .primaryBtn {
+        width: 50%;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
     }
+  }
 }

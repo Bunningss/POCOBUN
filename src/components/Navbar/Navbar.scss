@@ -1,81 +1,81 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .nav {
-    // background-color: rgba(0,0,0,0.5);
-    background-color: rgba(255,255,255,.6);
+  // background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  user-select: none;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .navContainer {
+    max-width: 1024px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 45px;
-    user-select: none;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    justify-content: space-between;
 
-    .navContainer {
-        max-width: 1024px;
-        width: 100%;
+    .logoContainer {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mobile {
+        width: 33%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+      }
 
-        .logoContainer {
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @include mobile {
-                width: 33%;
-                display: flex;
-                justify-content: flex-start;
-            }
-
-            .logo {
-                width: 80px;
-            }
-        }
-
-        .navList {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 50%;
-
-            @include mobile {
-                display: none;
-            }
-
-            .listItem {
-                color: var(--fontColor);
-
-                &:hover {
-                    color: var(--accentColor);
-                }
-            }
-        }
-
-        .bagWrapper {
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            position: relative;
-
-            @include mobile {
-                width: 33%;
-                justify-content: flex-end;
-            }
-            
-            .bag {
-                width: 40px;
-
-                @include mobile {
-                    width: 35px;
-                }
-            }
-        }
+      .logo {
+        width: 80px;
+      }
     }
+
+    .navList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+
+      @include mobile {
+        display: none;
+      }
+
+      .listItem {
+        color: var(--fontColor);
+
+        &:hover {
+          color: var(--accentColor);
+        }
+      }
+    }
+
+    .bagWrapper {
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      @include mobile {
+        width: 33%;
+        justify-content: flex-end;
+      }
+
+      .bag {
+        width: 40px;
+
+        @include mobile {
+          width: 35px;
+        }
+      }
+    }
+  }
 }

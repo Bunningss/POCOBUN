@@ -1,35 +1,36 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .orderItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  margin: 25px 0;
+
+  .orderItemImg {
+    height: 100px;
+    width: 100px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .orderItemInfo,
+  .orderDeliveryInfo {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    border-bottom: 1px solid lightgrey;
-    margin: 25px 0;
 
-    .orderItemImg {
-        height: 100px;
-        width: 100px;
+    .text {
+      text-transform: capitalize;
+      margin: 0;
+      font-weight: 400;
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
+      @include mobile {
+        font-size: 12px;
+      }
     }
-    
-    .orderItemInfo,.orderDeliveryInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .text {
-            text-transform: capitalize;
-            margin: 0;
-            font-weight: 400;
-
-            @include mobile {
-                font-size: 12px;
-            }
-        }
-    }
+  }
 }

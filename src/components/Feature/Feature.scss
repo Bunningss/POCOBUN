@@ -1,18 +1,18 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
-            .feature {
-                width: 60%;
-                margin: 10px 0;
-                padding: 20px;
-                border-radius: 5px;
-                border: 1px solid grey;
+.feature {
+  width: 60%;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
 
-                @include mobile {
-                    width: 100%;
-                }
+  @include mobile {
+    width: 100%;
+  }
 
-                .title {
-                    font-weight: 600;
-                    text-transform: capitalize;
-                }
-            }
+  .title {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}

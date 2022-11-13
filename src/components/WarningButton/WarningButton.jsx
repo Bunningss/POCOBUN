@@ -1,9 +1,11 @@
-import './WarningButton.scss';
+import "./WarningButton.scss";
 
-const WarningButton = ({ text,onClick }) => {
+const WarningButton = ({ text, onClick }) => {
   return (
-    <button onClick={onClick} className='btnWrng'>{text}</button>
-  )
-}
+    <button onClick={onClick} className="btnWrng">
+      {text}
+    </button>
+  );
+};
 
-export default WarningButton
+export default WarningButton;

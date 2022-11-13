@@ -1,7 +1,7 @@
-import './Card.scss';
-import { Link } from 'react-router-dom';
-import Heart from '../Heart/Heart';
-import Review from '../Review/Review';
+import "./Card.scss";
+import { Link } from "react-router-dom";
+import Heart from "../Heart/Heart";
+import Review from "../Review/Review";
 
 const Card = ({ item }) => {
   return (
@@ -9,20 +9,20 @@ const Card = ({ item }) => {
       <Link to={`/product/${item?.id}`}>
         <div className="wrapper">
           <div className="textZone">
-            <p className='text'>{item?.tag}</p>
-            <h4 className='title'>{item?.name}</h4>
+            <p className="text">{item?.tag}</p>
+            <h4 className="title">{item?.name}</h4>
             <div className="priceGroup">
               <p className="text oldPrice">20.99</p>
-              <p className='text price'>£{item?.price}</p>
+              <p className="text price">£{item?.price}</p>
             </div>
           </div>
           <img src={item?.image[0]} alt="" className="cardImg" />
         </div>
       </Link>
-      <Heart/>
-      <Review/>
+      <Heart />
+      <Review />
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

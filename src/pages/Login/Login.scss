@@ -1,35 +1,35 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @include tab {
     height: 100vh;
+  }
 
-    @include tab {
-        height: 100vh;
+  .loginWrapper {
+    background-color: var(--white);
+    border-radius: 5px;
+    width: 600px;
+
+    @include mobile {
+      width: 100%;
     }
 
-    .loginWrapper {
-        background-color: var(--white);
-        border-radius: 5px;
-        width: 600px;
+    .loginForm {
+      padding: 10px;
 
-        @include mobile {
-            width: 100%;
-        }
+      input {
+        width: 100%;
+      }
 
-        .loginForm {
-            padding: 10px;
-
-            input {
-                width: 100%;
-            }
-
-            .primaryBtn {
-                width: 100%;
-            }
-        }
+      .primaryBtn {
+        width: 100%;
+      }
     }
+  }
 }

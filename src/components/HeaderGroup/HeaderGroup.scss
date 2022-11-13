@@ -1,26 +1,26 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .headerGroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 0;
+  user-select: none;
+
+  @include mobile {
     margin: 20px 0 30px 0;
-    user-select: none;
+  }
 
-    @include mobile {
-        margin: 20px 0 30px 0;
-    }
+  .header {
+    text-transform: capitalize;
+    text-align: center;
+  }
 
-    .header {
-        text-transform: capitalize;
-        text-align: center;
-    }
-
-    .text {
-        text-transform: capitalize;
-        color: var(--accentColor);
-        line-height: 28px;
-        font-weight: 500;
-    }
+  .text {
+    text-transform: capitalize;
+    color: var(--accentColor);
+    line-height: 28px;
+    font-weight: 500;
+  }
 }

@@ -1,32 +1,31 @@
 .backdrop {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(2px);
-    display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: reveal 0.3s linear;
+
+  &.visible {
+    display: flex;
+  }
+
+  .backdropCircle {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50%);
+    background-color: rgba(245, 245, 247, 0.5);
+    display: flex;
     justify-content: center;
     align-items: center;
-    animation: reveal .3s linear;
 
-
-    &.visible {
-        display: flex;
+    .text {
+      text-transform: capitalize;
     }
-
-    .backdropCircle {
-        width: 200px;
-        height: 200px;
-        clip-path: circle(50%);
-        background-color: rgba(245, 245, 247, .5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .text {
-            text-transform: capitalize;
-        }
-    }
+  }
 }

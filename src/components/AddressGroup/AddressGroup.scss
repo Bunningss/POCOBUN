@@ -1,29 +1,28 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .addressGroup {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-    @include mobile {
-        margin: 10px 0;
+  @include mobile {
+    margin: 10px 0;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .textGroup {
+    .subheader {
+      color: #fff;
     }
+  }
 
-    .icon {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-    }
-
-    .textGroup {
-
-        .subheader {
-            color: #fff;
-        }
-    }
-
-    .text {
-        color: rgb(184, 174, 174);
-        font-size: 16px;
-    }
+  .text {
+    color: rgb(184, 174, 174);
+    font-size: 16px;
+  }
 }

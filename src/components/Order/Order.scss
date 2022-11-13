@@ -1,26 +1,26 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .order {
-    margin: 100px 0;
+  margin: 100px 0;
 
-    &:nth-child(1) {
-        margin-top: 50px;
-    }
+  &:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  @include mobile {
+    margin: 50px 0;
+  }
+
+  .orderInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
 
     @include mobile {
-        margin: 50px 0;
+      .text {
+        font-size: 14px;
+      }
     }
-
-    .orderInfo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #000;
-
-        @include mobile {
-            .text {
-                font-size: 14px;
-            }
-        }
-    }
+  }
 }

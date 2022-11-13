@@ -1,75 +1,74 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .card {
-    height: 500px;
-    width: 313px;
-    min-width: 300px;
-    margin: 10px 5px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--secondary);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position: relative;
-    user-select: none;
-    overflow: hidden;
+  height: 500px;
+  width: 313px;
+  min-width: 300px;
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
 
-    @include mobile {
-        height: 460px;
+  @include mobile {
+    height: 460px;
+  }
+
+  &:hover {
+    .review {
+      display: block;
     }
 
-    &:hover {
-
-        .review {
-            display: block;
-        }
-
-        .cardImg {
-            transform: scale(1.15);
-        }
+    .cardImg {
+      transform: scale(1.15);
     }
+  }
 
-    a {
-        .wrapper {
-            height: 100%;
-            width: 100%;
+  a {
+    .wrapper {
+      height: 100%;
+      width: 100%;
 
-            .textZone {
-                height: 30%;
-                width: 100%;
+      .textZone {
+        height: 30%;
+        width: 100%;
 
-                .priceGroup {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
-
-                .text {
-                    padding: 15px 0;
-                    text-transform: capitalize;
-
-                    &.price {
-                        color: var(--accentColor);
-                    }
-
-                    &.oldPrice {
-                        color: var(--accentSecondary);
-                        font-size: 14px;
-                        text-decoration: line-through var(--accentSecondary);
-                    }
-                }
-
-                .title {
-                    font-weight: 600;
-                    text-transform: capitalize;
-                }
-            }
-
-            .cardImg {
-                height: 70%;
-                width: 100%;
-                object-fit: contain;
-                transition: all .3s ease;
-            }
+        .priceGroup {
+          display: flex;
+          align-items: center;
+          gap: 10px;
         }
+
+        .text {
+          padding: 15px 0;
+          text-transform: capitalize;
+
+          &.price {
+            color: var(--accentColor);
+          }
+
+          &.oldPrice {
+            color: var(--accentSecondary);
+            font-size: 14px;
+            text-decoration: line-through var(--accentSecondary);
+          }
+        }
+
+        .title {
+          font-weight: 600;
+          text-transform: capitalize;
+        }
+      }
+
+      .cardImg {
+        height: 70%;
+        width: 100%;
+        object-fit: contain;
+        transition: all 0.3s ease;
+      }
     }
+  }
 }

@@ -1,114 +1,112 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-    .contactWrapper {
-        max-width: 1024px;
-        width: 100%;
+  .contactWrapper {
+    max-width: 1024px;
+    width: 100%;
 
-        .contactContainer {
-            width: 100%;
-            display: flex;
+    .contactContainer {
+      width: 100%;
+      display: flex;
 
-            @include mobile {
-                flex-direction: column;
-            }
+      @include mobile {
+        flex-direction: column;
+      }
 
-            .contactLeft {
-                width: 50%;
+      .contactLeft {
+        width: 50%;
 
-                @include mobile {
-                    width: 100%;
-                }
-
-                .subheader {
-                    font-size: 24px;
-                    font-weight: 500;
-
-                    @include laptop {
-                        font-size: 22px;
-                    }
-
-                    @include mobile {
-                        font-size: 18px;
-                    }
-                }
-
-                .textGroup {
-                    display: flex;
-                    align-items: center;
-                    gap: 25px;
-                    padding: 10px 0;
-
-                    .icon {
-                        width: 25px;
-                        object-fit: contain;
-                    }
-                }
-
-                .socials {
-                    width: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin: 20px 0;
-
-                    @include mobile {
-                        width: 100%;
-                        justify-content: space-evenly;
-                    }
-
-                    .socialLink {
-
-                        .icon {
-                            width: 50px;
-                            object-fit: contain;
-
-                            @include laptop {
-                                width: 35px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .contactRight {
-                width: 50%;
-
-                @include mobile {
-                    width: 100%;
-                }
-
-                .contactForm {
-                    width: 100%;
-
-                    .inputGroup {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-
-                        .formInput {
-                            width: 100%;
-                            border-radius: 0;
-                        }
-                    }
-
-                    textarea {
-                        width: 100%;
-                        border: 1px solid lightgrey;
-                        // border-radius: 5px;
-                        outline: none;
-                        padding: 15px 12px;
-                        font-size: 16px;
-                        font-weight: 500;
-                        height: 120px;
-                    }
-                }
-            }
+        @include mobile {
+          width: 100%;
         }
-    }
 
+        .subheader {
+          font-size: 24px;
+          font-weight: 500;
+
+          @include laptop {
+            font-size: 22px;
+          }
+
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+
+        .textGroup {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          padding: 10px 0;
+
+          .icon {
+            width: 25px;
+            object-fit: contain;
+          }
+        }
+
+        .socials {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 20px 0;
+
+          @include mobile {
+            width: 100%;
+            justify-content: space-evenly;
+          }
+
+          .socialLink {
+            .icon {
+              width: 50px;
+              object-fit: contain;
+
+              @include laptop {
+                width: 35px;
+              }
+            }
+          }
+        }
+      }
+
+      .contactRight {
+        width: 50%;
+
+        @include mobile {
+          width: 100%;
+        }
+
+        .contactForm {
+          width: 100%;
+
+          .inputGroup {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .formInput {
+              width: 100%;
+              border-radius: 0;
+            }
+          }
+
+          textarea {
+            width: 100%;
+            border: 1px solid lightgrey;
+            // border-radius: 5px;
+            outline: none;
+            padding: 15px 12px;
+            font-size: 16px;
+            font-weight: 500;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
 }

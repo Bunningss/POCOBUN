@@ -1,36 +1,35 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .store {
-    padding: 5px;
+  padding: 5px;
 
-    .categories {
+  .categories {
+    .categoryContainer {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
 
-        .categoryContainer {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-
-            @include mobile {
-                justify-content: flex-start;
-                overflow-x: scroll;
-                overflow-y: hidden;
-            }
-        }
+      @include mobile {
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
     }
+  }
 
-    .header {
-        text-transform: capitalize;
-        margin: 20px 0 30px 0;
+  .header {
+    text-transform: capitalize;
+    margin: 20px 0 30px 0;
 
-        span {
-            color: var(--accentSecondary);
-        }
+    span {
+      color: var(--accentSecondary);
     }
+  }
 
-    .storeWrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+  .storeWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

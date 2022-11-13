@@ -1,19 +1,19 @@
 .account {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    .accountTitle {
-        width: 100%;
-    }
-    
-    .accountContent {
-        max-width: 1024px;
-        width: 100%;
+  .accountTitle {
+    width: 100%;
+  }
 
-        .formInput {
-            width: 100%;
-        }
+  .accountContent {
+    max-width: 1024px;
+    width: 100%;
+
+    .formInput {
+      width: 100%;
     }
+  }
 }

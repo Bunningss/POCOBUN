@@ -1,25 +1,25 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .section {
-    margin: 10px 0;
+  margin: 10px 0;
+  width: 100%;
+  position: relative;
+
+  .cardContainer {
     width: 100%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 
-    .cardContainer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-
-        @include laptopLarge {
-            justify-content: flex-start;
-            overflow-x: scroll;
-            overflow-y: hidden;
-        }
-
-        .card {
-            overflow: hidden;
-            position: relative;
-            width: 413px;
-        }
+    @include laptopLarge {
+      justify-content: flex-start;
+      overflow-x: scroll;
+      overflow-y: hidden;
     }
+
+    .card {
+      overflow: hidden;
+      position: relative;
+      width: 413px;
+    }
+  }
 }

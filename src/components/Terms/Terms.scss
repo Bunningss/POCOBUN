@@ -1,20 +1,19 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .agreement {
-    margin: 10px 0 5px 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+  margin: 10px 0 5px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 
-    .text {
-
-        a {
-            color: var(--accentColor);
-        }
+  .text {
+    a {
+      color: var(--accentColor);
     }
+  }
 
-        @include mobile { 
-            width: 100%;
-        }
+  @include mobile {
+    width: 100%;
+  }
 }

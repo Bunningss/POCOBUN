@@ -1,9 +1,11 @@
-import './Rate.scss';
+import "./Rate.scss";
 
-const Rate = ({r, handleClick}) => {
+const Rate = ({ r, handleClick }) => {
   return (
-    <h6 onClick={handleClick} className="rateNumber subheader">{r}</h6>
-  )
-}
+    <h6 onClick={handleClick} className="rateNumber subheader">
+      {r}
+    </h6>
+  );
+};
 
-export default Rate
+export default Rate;

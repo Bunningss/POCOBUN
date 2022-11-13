@@ -1,45 +1,45 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .footer {
-    background-color: #282627;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+  background-color: #282627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 
-    h2 {
-        color: lightgray;
-        font-weight: 500;
+  h2 {
+    color: lightgray;
+    font-weight: 500;
 
-        span {
-            color: #fff;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        @include mobile {
-            font-size: 24px;
-        }
+    span {
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
     }
 
-    h6 {
-        font-size: 24px;
-        font-weight: 500;
-        text-transform: capitalize;
-        color: lightgray;
-        margin: 15px 0;
-
-        @include mobile {
-            font-size: 20px;
-        }
+    @include mobile {
+      font-size: 24px;
     }
+  }
 
-    .footerLogo {
-        width: 250px;
+  h6 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: lightgray;
+    margin: 15px 0;
 
-        @include mobile {
-            width: 200px;
-        }
+    @include mobile {
+      font-size: 20px;
     }
+  }
+
+  .footerLogo {
+    width: 250px;
+
+    @include mobile {
+      width: 200px;
+    }
+  }
 }

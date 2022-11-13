@@ -1,33 +1,33 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .disclaimer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 1.8;
-    margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.8;
+  margin: 10px 0;
+  padding: 5px;
+
+  @include mobile {
     padding: 5px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 600;
 
     @include mobile {
-        padding: 5px;
-        text-align: center;
+      font-size: 12px;
     }
 
-    p {
-        font-size: 14px;
-        font-weight: 600;
-
-        @include mobile {
-            font-size: 12px;
-        }
-
-        span {
-            color: var(--accentColor);
-        }
-
-        a {
-            color: var(--accentColor);
-        }
+    span {
+      color: var(--accentColor);
     }
+
+    a {
+      color: var(--accentColor);
+    }
+  }
 }

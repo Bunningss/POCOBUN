@@ -1,27 +1,26 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .cart {
+  .cartTotal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 
-    .cartTotal {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px;
-
-        .title {
-            font-weight: 500;
-            text-transform: capitalize;
-        }
+    .title {
+      font-weight: 500;
+      text-transform: capitalize;
     }
+  }
 
-    .checkout {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 70px 0 20px 0;
+  .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 20px 0;
 
-        @include mobile {
-            margin: 40px 0 20px 0;
-        }
+    @include mobile {
+      margin: 40px 0 20px 0;
     }
+  }
 }

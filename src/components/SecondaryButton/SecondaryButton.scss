@@ -1,49 +1,49 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .secondaryBtn {
-    max-width: 300px;
-    border: 1px solid var(--fontColor);
-    background-color: transparent;
-    color: var(--fontColor);
-    padding: 15px;
-    min-width: 200px;
+  max-width: 300px;
+  border: 1px solid var(--fontColor);
+  background-color: transparent;
+  color: var(--fontColor);
+  padding: 15px;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  margin: 10px 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.3s ease;
+
+  @include mobile {
     font-size: 16px;
-    font-weight: 500;
-    outline: none;
-    margin: 10px 0;
-    text-transform: capitalize;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-    transition: all .3s ease;
+    min-width: 150px;
+    padding: 10px 15px;
+  }
 
-    @include mobile {
-        font-size: 16px;
-        min-width: 150px;
-        padding: 10px 15px;
-    }
+  @include sMobile {
+    font-size: 14px;
+  }
 
-    @include sMobile {
-        font-size: 14px;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontColor);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
 
-        &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--fontColor);
-        opacity: 0;
-        transition: all .4s ease-in-out;
-    }
-
-    &:hover::after {
-        opacity: 1;
-        width: 10%;
-        border-radius: 32% 52% 51% 32% / 0% 46% 52% 0% ;
-        z-index: -1;
-    }
+  &:hover::after {
+    opacity: 1;
+    width: 10%;
+    border-radius: 32% 52% 51% 32% / 0% 46% 52% 0%;
+    z-index: -1;
+  }
 }
